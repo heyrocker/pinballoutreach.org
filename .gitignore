@@ -14,6 +14,7 @@
 # Ignore configuration files that may contain sensitive information.
 docroot/sites/*/settings.local.php
 docroot/sites/*/services*.yml
+docroot/.htaccess
 
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
