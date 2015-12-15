@@ -1,0 +1,8 @@
+uuid: b201c0f0-30f8-4a7b-a447-71eb7332bce8
+langcode: en
+status: true
+dependencies: {  }
+id: promo_block
+label: 'Promo Block'
+revision: 0
+description: 'A simple header, image, and link for promotions on the site.'

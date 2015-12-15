@@ -1,0 +1,23 @@
+uuid: a9e6dfcb-4a19-40d8-a308-8eb4209d4c57
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.promo_block
+    - field.storage.block_content.field_block_promo_link
+  module:
+    - link
+id: block_content.promo_block.field_block_promo_link
+field_name: field_block_promo_link
+entity_type: block_content
+bundle: promo_block
+label: Link
+description: 'The URL people will go to when they click on the title or image in this block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

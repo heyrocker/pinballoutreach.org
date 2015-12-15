@@ -1,0 +1,19 @@
+uuid: d6f74981-0627-4e6c-bf00-f81ab45fdebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.promo_block
+    - field.storage.block_content.field_block_promo_title
+id: block_content.promo_block.field_block_promo_title
+field_name: field_block_promo_title
+entity_type: block_content
+bundle: promo_block
+label: Title
+description: 'The displayed title of this promo block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
