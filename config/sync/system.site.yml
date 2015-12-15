@@ -1,0 +1,12 @@
+uuid: a2a13fc9-7e66-4b72-a300-c843396670e4
+name: 'Pinball Outreach Project'
+mail: greg@pinballoutreach.org
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
