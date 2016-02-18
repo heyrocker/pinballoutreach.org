@@ -1,0 +1,17 @@
+uuid: b100aa98-7da7-4330-b863-99a4db7a14aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'POP-related news, announcements, and links. '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

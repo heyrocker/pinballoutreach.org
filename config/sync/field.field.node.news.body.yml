@@ -1,16 +1,16 @@
-uuid: e4a60d91-fb93-4509-b552-820f906f467f
+uuid: a61b6e64-e98e-4a7b-9400-ced7aee4570a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.news
   module:
     - text
-id: node.article.body
+id: node.news.body
 field_name: body
 entity_type: node
-bundle: article
+bundle: news
 label: Body
 description: ''
 required: false
