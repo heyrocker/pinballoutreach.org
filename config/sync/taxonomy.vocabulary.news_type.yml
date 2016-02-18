@@ -1,0 +1,9 @@
+uuid: 00f2b21c-9e6e-4adb-9400-e47a4f56e3b1
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Type'
+vid: news_type
+description: 'The type of news this is - Outreach report, press release, announcement, etc.'
+hierarchy: 0
+weight: 0
