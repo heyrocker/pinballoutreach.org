@@ -1,0 +1,9 @@
+uuid: e16d22ab-6a81-47cc-ba08-8c6a2be92312
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Type'
+vid: event_type
+description: 'The type of event this is - Outreach, Tournament, Partnership, etc.'
+hierarchy: 0
+weight: 0
