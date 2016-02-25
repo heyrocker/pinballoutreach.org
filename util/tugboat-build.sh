@@ -2,4 +2,4 @@
 set -e
 cd /var/lib/tugboat/docroot
 drush config-import
-drush cc all
+drush cache-rebuild
