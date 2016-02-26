@@ -1,0 +1,19 @@
+uuid: 44f4d23b-4703-422d-9a04-4fbf3fd2d73f
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_product_related_links
+field_name: field_product_related_links
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
