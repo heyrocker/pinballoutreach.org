@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.homepage_images.field_homepage_image
     - field.field.node.homepage_images.field_homepage_image_quote
+    - image.style.thumbnail
     - node.type.homepage_images
   module:
     - image

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_images.field_homepage_image
+    - field.field.node.homepage_images.field_homepage_image_quote
     - node.type.homepage_images
   module:
     - user
@@ -14,4 +16,6 @@ mode: teaser
 content:
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_homepage_image: true
+  field_homepage_image_quote: true
