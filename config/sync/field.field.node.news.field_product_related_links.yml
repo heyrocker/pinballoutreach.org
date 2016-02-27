@@ -1,0 +1,23 @@
+uuid: c852a6f3-16c4-4ba5-8700-c4f4d15ddec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_related_links
+    - node.type.news
+  module:
+    - link
+id: node.news.field_product_related_links
+field_name: field_product_related_links
+entity_type: node
+bundle: news
+label: 'Related Links'
+description: 'Enter up to three related links associated with this news (external websites, related posts, etc.) These links can be within the POP website, or external.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
