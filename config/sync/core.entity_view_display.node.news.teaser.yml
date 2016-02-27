@@ -5,11 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_hero_image
+    - field.field.node.news.field_news_deck
     - field.field.node.news.field_news_news_type
     - field.field.node.news.field_news_photos
     - field.field.node.news.field_product_related_links
+    - image.style.medium
     - node.type.news
   module:
+    - image
     - text
     - user
 id: node.news.teaser
@@ -17,16 +21,23 @@ targetEntityType: node
 bundle: news
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+  field_hero_image:
+    type: image
+    weight: 0
+    label: above
     settings:
-      trim_length: 600
+      image_style: medium
+      image_link: content
     third_party_settings: {  }
-  links:
-    weight: 100
+  field_news_deck:
+    type: text_default
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  body: true
   field_news_news_type: true
   field_news_photos: true
   field_product_related_links: true
+  links: true
