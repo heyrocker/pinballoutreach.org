@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_hero_image
+    - field.field.node.news.field_news_deck
     - field.field.node.news.field_news_news_type
     - field.field.node.news.field_news_photos
     - field.field.node.news.field_product_related_links
@@ -24,6 +26,20 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_hero_image:
+    weight: 106
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_news_deck:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_news_news_type:
     weight: 102
     label: above
