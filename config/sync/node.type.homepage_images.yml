@@ -1,0 +1,17 @@
+uuid: 459d8338-67dd-408a-b700-c38d7d3286e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Homepage Images'
+type: homepage_images
+description: 'The images + quotes that appear on the homepage.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

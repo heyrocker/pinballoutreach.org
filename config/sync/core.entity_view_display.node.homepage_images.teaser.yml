@@ -1,0 +1,17 @@
+uuid: bd2e1ad1-852b-4e75-8100-a7916d514f23
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.homepage_images
+  module:
+    - user
+id: node.homepage_images.teaser
+targetEntityType: node
+bundle: homepage_images
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }
