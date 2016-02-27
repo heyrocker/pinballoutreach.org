@@ -1,0 +1,21 @@
+uuid: 5fc3b5e5-7070-4e01-b91e-30811d9b15ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_quote_person_quoted
+field_name: field_quote_person_quoted
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

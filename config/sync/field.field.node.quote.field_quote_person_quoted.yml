@@ -1,0 +1,19 @@
+uuid: 2ff05829-7ef0-47cb-bb00-af9e4579f3d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_person_quoted
+    - node.type.quote
+id: node.quote.field_quote_person_quoted
+field_name: field_quote_person_quoted
+entity_type: node
+bundle: quote
+label: 'Person Quoted'
+description: 'The name of the person being quoted in this quote.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

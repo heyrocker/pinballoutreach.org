@@ -11,12 +11,12 @@ id: node.quote.body
 field_name: body
 entity_type: node
 bundle: quote
-label: Body
-description: ''
-required: false
+label: Quote
+description: 'A quote about POP.'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
 field_type: text_with_summary
