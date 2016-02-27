@@ -1,8 +1,9 @@
-uuid: 4277d003-2673-4746-b202-2f66f53545bb
+uuid: 644135de-e281-4be4-8b09-9f500af1f0bc
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.news.body
     - field.field.node.news.field_hero_image
     - field.field.node.news.field_news_deck
@@ -15,10 +16,10 @@ dependencies:
     - link
     - text
     - user
-id: node.news.default
+id: node.news.full
 targetEntityType: node
 bundle: news
-mode: default
+mode: full
 content:
   body:
     label: hidden
