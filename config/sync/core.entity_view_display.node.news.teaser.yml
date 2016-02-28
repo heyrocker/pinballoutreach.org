@@ -24,7 +24,7 @@ content:
   field_hero_image:
     type: image
     weight: 0
-    label: above
+    label: inline
     settings:
       image_style: medium
       image_link: content
@@ -32,7 +32,7 @@ content:
   field_news_deck:
     type: text_default
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:

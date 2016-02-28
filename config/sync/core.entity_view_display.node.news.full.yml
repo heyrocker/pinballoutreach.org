@@ -30,7 +30,7 @@ content:
     third_party_settings: {  }
   field_hero_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -38,7 +38,7 @@ content:
     type: image
   field_news_photos:
     weight: 3
-    label: above
+    label: hidden
     settings:
       image_style: medium
       image_link: ''
@@ -46,7 +46,7 @@ content:
     type: image
   field_product_related_links:
     weight: 4
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
