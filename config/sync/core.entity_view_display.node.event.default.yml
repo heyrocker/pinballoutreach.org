@@ -3,10 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.body
+    - field.field.node.event.field_event_deck
+    - field.field.node.event.field_event_description
+    - field.field.node.event.field_event_end_date
     - field.field.node.event.field_event_event_type
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_location_address
+    - field.field.node.event.field_event_photo
+    - field.field.node.event.field_event_start_date
     - node.type.event
   module:
+    - datetime
+    - image
     - text
     - user
 id: node.event.default
@@ -14,19 +22,61 @@ targetEntityType: node
 bundle: event
 mode: default
 content:
-  body:
+  field_event_deck:
+    weight: 1
     label: hidden
-    type: text_default
-    weight: 101
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+  field_event_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_event_end_date:
+    weight: 4
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   field_event_event_type:
-    weight: 102
-    label: above
+    weight: 7
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  links:
-    weight: 100
-hidden: {  }
+  field_event_location:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_event_location_address:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_event_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_event_start_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+hidden:
+  links: true

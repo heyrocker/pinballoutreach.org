@@ -1,0 +1,24 @@
+uuid: 0f787a45-1bd4-4aa5-b903-3c1d5970fb0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_end_date
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_event_end_date
+field_name: field_event_end_date
+entity_type: node
+bundle: event
+label: 'End Date'
+description: 'The date and time this event ends. If it is a one day event, then the start and end dates should be the same.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: 0dd7aa8b-d93a-417f-8c16-227f43865bd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_deck
+    - node.type.event
+  module:
+    - text
+id: node.event.field_event_deck
+field_name: field_event_deck
+entity_type: node
+bundle: event
+label: Deck
+description: 'The deck is a short summary of this event, to be used in listings and teaser blocks. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
