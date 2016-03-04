@@ -1,25 +1,25 @@
-uuid: 1c15fe64-81eb-45a6-b133-5100ce018f0c
+uuid: b88974a5-129b-43b8-ae00-df5cfaca70cb
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.most_recent_news_block
+    - views.view.upcoming_events
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__most_recent_news_block_block_1
+id: views_block__upcoming_events_block_2
 theme: bartik
-region: featured_bottom_first
+region: featured_bottom_second
 weight: -8
 provider: null
-plugin: 'views_block:most_recent_news_block-block_1'
+plugin: 'views_block:upcoming_events-block_2'
 settings:
-  id: 'views_block:most_recent_news_block-block_1'
+  id: 'views_block:upcoming_events-block_2'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
