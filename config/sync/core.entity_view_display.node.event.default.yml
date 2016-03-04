@@ -38,8 +38,8 @@ content:
     weight: 4
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
     type: datetime_default
   field_event_event_type:
@@ -74,8 +74,8 @@ content:
     weight: 3
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
     type: datetime_default
 hidden:
