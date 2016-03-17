@@ -1,0 +1,20 @@
+uuid: a77e6cb5-7899-40cf-8626-386c61e45da3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pinballoutreach
+id: pinballoutreach_messages
+theme: pinballoutreach
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

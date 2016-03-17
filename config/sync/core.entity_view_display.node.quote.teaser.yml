@@ -19,14 +19,30 @@ mode: teaser
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
+    type: text_default
+    weight: 0
+    settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 100
+  field_quote_organization:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_quote_person_quoted:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_quote_title:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
-  field_quote_organization: true
-  field_quote_person_quoted: true
-  field_quote_title: true
+  links: true

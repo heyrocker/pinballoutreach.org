@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.event.field_event_location_address
     - field.field.node.event.field_event_photo
     - field.field.node.event.field_event_start_date
+    - image.style.medium
     - node.type.event
   module:
     - datetime
@@ -41,8 +42,8 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: medium
+      image_link: content
     third_party_settings: {  }
   field_event_start_date:
     type: datetime_default

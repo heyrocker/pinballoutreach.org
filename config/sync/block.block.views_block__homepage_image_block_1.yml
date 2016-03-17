@@ -1,22 +1,22 @@
-uuid: b88974a5-129b-43b8-ae00-df5cfaca70cb
+uuid: d497a48c-c963-4b80-9704-4d0cea882725
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.upcoming_events
+    - views.view.homepage_image
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__upcoming_events_block_2
+id: views_block__homepage_image_block_1
 theme: bartik
-region: featured_bottom_second
+region: content
 weight: -7
 provider: null
-plugin: 'views_block:upcoming_events-block_2'
+plugin: 'views_block:homepage_image-block_1'
 settings:
-  id: 'views_block:upcoming_events-block_2'
+  id: 'views_block:homepage_image-block_1'
   label: ''
   provider: views
   label_display: '0'

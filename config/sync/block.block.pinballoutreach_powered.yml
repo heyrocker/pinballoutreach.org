@@ -1,0 +1,20 @@
+uuid: c8207304-fe4c-4b08-8900-d08e1e531611
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pinballoutreach
+id: pinballoutreach_powered
+theme: pinballoutreach
+region: '-1'
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

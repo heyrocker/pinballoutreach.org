@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_event_location_address
     - field.field.node.event.field_event_photo
     - field.field.node.event.field_event_start_date
+    - image.style.medium
     - node.type.event
   module:
     - datetime
@@ -22,20 +23,14 @@ targetEntityType: node
 bundle: event
 mode: default
 content:
-  field_event_deck:
+  field_event_description:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-  field_event_description:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
   field_event_end_date:
-    weight: 4
+    weight: 3
     label: inline
     settings:
       timezone_override: ''
@@ -43,21 +38,21 @@ content:
     third_party_settings: {  }
     type: datetime_default
   field_event_event_type:
-    weight: 7
+    weight: 6
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_event_location:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_event_location_address:
-    weight: 6
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -66,12 +61,12 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
   field_event_start_date:
-    weight: 3
+    weight: 2
     label: inline
     settings:
       timezone_override: ''
@@ -79,4 +74,5 @@ content:
     third_party_settings: {  }
     type: datetime_default
 hidden:
+  field_event_deck: true
   links: true

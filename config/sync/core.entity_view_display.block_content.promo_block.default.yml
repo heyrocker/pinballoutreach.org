@@ -8,6 +8,7 @@ dependencies:
     - field.field.block_content.promo_block.field_block_promo_image
     - field.field.block_content.promo_block.field_block_promo_link
     - field.field.block_content.promo_block.field_block_promo_title
+    - image.style.medium
   module:
     - image
     - link
@@ -19,21 +20,21 @@ mode: default
 content:
   field_block_promo_body:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_block_promo_image:
-    weight: 3
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
   field_block_promo_link:
-    weight: 4
-    label: above
+    weight: 3
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -43,8 +44,8 @@ content:
     third_party_settings: {  }
     type: link
   field_block_promo_title:
-    weight: 1
-    label: above
+    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

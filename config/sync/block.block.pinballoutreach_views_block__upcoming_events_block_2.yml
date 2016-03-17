@@ -1,4 +1,4 @@
-uuid: b88974a5-129b-43b8-ae00-df5cfaca70cb
+uuid: e953c54f-02b1-49d3-8d12-181d1e1e9132
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - system
     - views
   theme:
-    - bartik
-id: views_block__upcoming_events_block_2
-theme: bartik
-region: featured_bottom_second
+    - pinballoutreach
+id: pinballoutreach_views_block__upcoming_events_block_2
+theme: pinballoutreach
+region: header
 weight: -7
 provider: null
 plugin: 'views_block:upcoming_events-block_2'

@@ -1,0 +1,31 @@
+uuid: f0484b67-c7fa-4738-b158-88ff9fd88247
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:promo_block:c69915f1-8af6-455f-8922-34c800798378'
+  module:
+    - block_content
+    - system
+  theme:
+    - pinballoutreach
+id: pinballoutreach_pinballsummercamppromo
+theme: pinballoutreach
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:c69915f1-8af6-455f-8922-34c800798378'
+settings:
+  id: 'block_content:c69915f1-8af6-455f-8922-34c800798378'
+  label: 'Pinball Summer Camp'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
