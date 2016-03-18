@@ -8,8 +8,8 @@ dependencies:
     - pinballoutreach
 id: pinballoutreach_breadcrumbs
 theme: pinballoutreach
-region: header
-weight: 0
+region: breadcrumb
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

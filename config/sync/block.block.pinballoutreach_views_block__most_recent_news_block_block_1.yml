@@ -1,6 +1,6 @@
 uuid: 9e6b5fb5-4d54-47b2-8a00-be7962bf1771
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.most_recent_news_block
@@ -11,8 +11,8 @@ dependencies:
     - pinballoutreach
 id: pinballoutreach_views_block__most_recent_news_block_block_1
 theme: pinballoutreach
-region: header
-weight: -7
+region: '-1'
+weight: -5
 provider: null
 plugin: 'views_block:most_recent_news_block-block_1'
 settings:

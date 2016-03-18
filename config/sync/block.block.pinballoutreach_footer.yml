@@ -1,6 +1,6 @@
 uuid: 30966f5f-85df-4b8c-a135-5347aae53299
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -10,8 +10,8 @@ dependencies:
     - pinballoutreach
 id: pinballoutreach_footer
 theme: pinballoutreach
-region: '-1'
-weight: 0
+region: footer
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

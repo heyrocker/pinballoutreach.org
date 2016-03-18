@@ -8,8 +8,8 @@ dependencies:
     - pinballoutreach
 id: pinballoutreach_messages
 theme: pinballoutreach
-region: header
-weight: 0
+region: highlighted
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

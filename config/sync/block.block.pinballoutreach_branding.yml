@@ -1,6 +1,6 @@
 uuid: 3400ab65-3fe7-45e9-944b-7526dc478cda
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -8,8 +8,8 @@ dependencies:
     - pinballoutreach
 id: pinballoutreach_branding
 theme: pinballoutreach
-region: primary_menu
-weight: -6
+region: '-1'
+weight: -1
 provider: null
 plugin: system_branding_block
 settings:
