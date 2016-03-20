@@ -1,0 +1,79 @@
+html {
+  font-family: 'Droid Sans';
+}
+
+.node--view-mode-homepage-quote .field--name-body {
+  font-family: 'Droid Serif';
+  color: white;
+  font-size: 150%;
+}
+
+.node--view-mode-homepage-quote .field--name-field-quote-person-quoted,
+.node--view-mode-homepage-quote .field--name-field-quote-title,
+.node--view-mode-homepage-quote .field--name-field-quote-organization {
+  font-style: italic;
+  color: white;
+}
+
+.node--view-mode-homepage-quote .node__content {
+  padding: 0px 20px 20px 20px;
+  vertical-align: middle;
+}
+
+.views-field-field-homepage-image-quote {
+  width: 400px;
+  position: relative;
+  top: -225px;
+  float: right;
+  background: rgba(204, 204, 204, .7);
+}
+
+.featured {
+  background: rgba(30, 50, 10, 0.08);
+  border-top: 1px solid #e7e7e7;
+}
+
+.featured .region {
+  padding: 0 20px;
+  float: left; /* LTR */
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px 15px 30px;
+  width: 33%;
+  border: 1px solid #ffffff;
+}
+
+.secondary {
+  background: rgba(30, 50, 10, 0.08);
+  border-top: 2px solid #e7e7e7;
+}
+
+.secondary .region {
+  padding: 0 20px;
+  float: left; /* LTR */
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px 15px 30px;
+  width: 50%;
+  align: center;
+  border: 1px solid #ffffff;
+}
+
+.secondary h2 {
+  text-align: center;
+}
+
+.menu ul {
+  float: right;
+  position: relative;
+  display: inline;
+}
+
+.menu li {
+  float: left;
+  position: relative;
+  display: inline;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}

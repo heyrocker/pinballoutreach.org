@@ -1,0 +1,22 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+
+droid-sans:
+  remote: http://www.droidfonts.com/info/droid-sans-fonts/
+  license:
+    name: Apache Version 2
+    url: http://www.droidfonts.com/licensing/
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Droid%20Sans: { type: external }
+
+droid-serif:
+  remote: http://www.droidfonts.com/info/droid-serif-fonts/
+  license:
+    name: Apache Version 2
+    url: http://www.droidfonts.com/licensing/
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Droid%20Serif: { type: external }

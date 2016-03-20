@@ -1,8 +1,9 @@
-uuid: f5b5e40a-b798-40b9-9c29-41b5b8b5451e
+uuid: 24cd034c-6ed4-424b-9541-6512a2c3a3fb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.homepage_quote
     - field.field.node.quote.body
     - field.field.node.quote.field_quote_organization
     - field.field.node.quote.field_quote_person_quoted
@@ -11,10 +12,10 @@ dependencies:
   module:
     - text
     - user
-id: node.quote.default
+id: node.quote.homepage_quote
 targetEntityType: node
 bundle: quote
-mode: default
+mode: homepage_quote
 content:
   body:
     label: hidden
@@ -24,21 +25,21 @@ content:
     third_party_settings: {  }
   field_quote_organization:
     weight: 103
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_quote_person_quoted:
     weight: 102
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_quote_title:
     weight: 105
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

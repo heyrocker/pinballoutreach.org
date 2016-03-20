@@ -1,23 +1,23 @@
-uuid: f0484b67-c7fa-4738-b158-88ff9fd88247
+uuid: 74dea679-b279-46d2-bb05-5ab5d76842dd
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:promo_block:c69915f1-8af6-455f-8922-34c800798378'
+    - 'block_content:basic:9d118b30-2e6e-418f-b300-c660335d1e1f'
   module:
     - block_content
     - system
   theme:
     - pinballoutreach
-id: pinballoutreach_pinballsummercamppromo
+id: pophqcurrentlineup
 theme: pinballoutreach
-region: featured_first
-weight: -5
+region: secondary_second
+weight: -7
 provider: null
-plugin: 'block_content:c69915f1-8af6-455f-8922-34c800798378'
+plugin: 'block_content:9d118b30-2e6e-418f-b300-c660335d1e1f'
 settings:
-  id: 'block_content:c69915f1-8af6-455f-8922-34c800798378'
-  label: 'Pinball Summer Camp'
+  id: 'block_content:9d118b30-2e6e-418f-b300-c660335d1e1f'
+  label: 'POP HQ Current Lineup'
   provider: block_content
   label_display: visible
   status: true

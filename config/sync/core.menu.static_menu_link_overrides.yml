@@ -3,5 +3,5 @@ definitions:
     enabled: true
     menu_name: footer
     parent: ''
-    weight: 0
     expanded: false
+    weight: 0
