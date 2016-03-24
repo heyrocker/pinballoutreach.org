@@ -1,61 +1,66 @@
 <div class="layout-container">
 
-  <header role="banner">
+  <header class="header" role="banner">
     {{ page.header }}
   </header>
 
-  {{ page.primary_menu }}
+  <div class="primary-menu">
+    {{ page.primary_menu }}
+  </div>
 
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
+  <div class="highlighted">
+    {{ page.highlighted }}
+  </div>
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+    {% if page.content_hero %}
+      <div class="content-hero">
+        {{ page.content_hero }}
+      </div>
     {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
+    {% if page.content or page.content_sidebar %}
+      <div class="content-main-container grid-row">
+        <div class="content-main">
+          {{ page.content }}
+        </div>
+
+        {% if page.content_sidebar %}
+          <div class="content-sidebar">
+            {{ page.content_sidebar }}
+          </div>
+        {% endif %}
+      </div>
     {% endif %}
 
+    {% if page.content_bottom %}
+      <div class="content-bottom">
+        {{ page.content_bottom }}
+      </div>
+    {% endif %}
   </main>
 
   {% if page.featured_first or page.featured_second or page.featured_third %}
-    <div class="featured">
-      <aside class="layout-container clearfix" role="complementary">
-        {{ page.featured_first }}
-        {{ page.featured_second }}
-        {{ page.featured_third }}
-      </aside>
+    <div class="featured grid-row">
+      {{ page.featured_first }}
+      {{ page.featured_second }}
+      {{ page.featured_third }}
     </div>
   {% endif %}
 
   {% if page.secondary_first or page.secondary_second %}
-    <div class="secondary">
-      <aside class="layout-container clearfix" role="complementary">
-        {{ page.secondary_first }}
-        {{ page.secondary_second }}
-      </aside>
+    <div class="secondary grid-row">
+      {{ page.secondary_first }}
+      {{ page.secondary_second }}
     </div>
   {% endif %}
 
   {% if page.footer %}
-    <footer role="contentinfo">
+    <footer class="footer" role="contentinfo">
       {{ page.footer }}
     </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div>

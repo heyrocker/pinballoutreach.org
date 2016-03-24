@@ -28,52 +28,103 @@ html {
   background: rgba(204, 204, 204, .7);
 }
 
-.featured {
-  background: rgba(30, 50, 10, 0.08);
-  border-top: 1px solid #e7e7e7;
+
+.layout-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.featured .region {
-  padding: 0 20px;
-  float: left; /* LTR */
-  position: relative;
-  box-sizing: border-box;
-  padding: 20px 15px 30px;
-  width: 33%;
-  border: 1px solid #ffffff;
+.header,
+.footer,
+.content-hero,
+.content-sidebar,
+.content-bottom {
+  flex: 1 100%;
+}
+
+.header {
+  order: 1;
+  flex-basis: 100%;
+}
+
+.content-hero {
+  order: 2;
+  flex-basis: 100%;
+}
+
+.content-main-container {
+  order: 3;
+}
+
+.content-main {
+  order: 3;
+  flex-basis: 60%;
+  padding: 20px 100px 20px 100px;
+  font-size: 120%;
+  line-height: 28px;
+  font-family: droid-serif;
+}
+
+.content-sidebar {
+  order: 3;
+  flex-basis: 25%;
+}
+
+.content-sidebar .block {
+  border: 1px solid #000000;
+  padding: 0px 30px 30px 30px;
+  text-align: center;
+  font-size: 80%;
+}
+
+.content-bottom {
+  order: 4;
+  flex-basis: 100%;
+}
+
+.grid-row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.featured {
+  order: 5;
 }
 
 .secondary {
-  background: rgba(30, 50, 10, 0.08);
-  border-top: 2px solid #e7e7e7;
+  order: 6;
 }
 
-.secondary .region {
-  padding: 0 20px;
-  float: left; /* LTR */
-  position: relative;
-  box-sizing: border-box;
-  padding: 20px 15px 30px;
-  width: 50%;
-  align: center;
-  border: 1px solid #ffffff;
-}
-
-.secondary h2 {
+.region-featured-third,
+.region-featured-second,
+.region-featured-first {
+  order: 5;
+  flex-basis:33%;
+  border: 1px solid #000000;
+  padding: 0px 30px 30px 30px;
   text-align: center;
 }
 
-.menu ul {
-  float: right;
-  position: relative;
-  display: inline;
+.region-secondary-first,
+.region-secondary-second {
+ order: 6;
+ flex-basis: 50%;
+ border: 1px solid #000000;
+ padding: 0px 30px 30px 30px;
+ text-align: center;
+}
+
+.footer {
+  order: 7;
+  flex-basis: 100%;
 }
 
 .menu li {
   float: left;
-  position: relative;
-  display: inline;
   margin-right: 20px;
-  margin-bottom: 20px;
-
 }
+
+.primary-menu {
+  margin-bottom: 20px;
+}
+

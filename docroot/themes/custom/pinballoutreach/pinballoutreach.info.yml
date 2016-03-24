@@ -7,23 +7,19 @@ base theme: classy
 package: Custom
 
 regions:
-  page_top: 'Page Top'
   header: 'Header'
   primary_menu: 'Primary Menu'
-  secondary_menu: 'Secondary Menu'
-  breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'
-  help: 'Help'
-  content: 'Content'
-  sidebar_first: 'Sidebar First'
-  sidebar_second: 'Sidebar Second'
+  content_hero: 'Content Hero'
+  content_main: 'Content Main'
+  content_sidebar: 'Content Sidebar'
+  content_bottom: 'Content Bottom'
   featured_first: 'Featured First'
   featured_second: 'Featured Second'
   featured_third: 'Featured Third'
   secondary_first: 'Secondary First'
   secondary_second: 'Secondary Second'
   footer: 'Footer'
-  page_bottom: 'Page Bottom'
 
 libraries:
   - pinballoutreach/global-css
