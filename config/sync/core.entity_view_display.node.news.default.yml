@@ -26,14 +26,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-  field_hero_image:
-    weight: 0
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
   field_news_photos:
     weight: 3
     label: above
@@ -54,6 +46,7 @@ content:
     third_party_settings: {  }
     type: link
 hidden:
+  field_hero_image: true
   field_news_deck: true
   field_news_news_type: true
   links: true

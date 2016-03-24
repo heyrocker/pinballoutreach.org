@@ -1,0 +1,33 @@
+uuid: 428e4a7c-0a5a-47c5-ba00-c5640d228b0d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b030a843-4c08-4037-8a49-73deabaf88bd'
+  module:
+    - block_content
+    - node
+  theme:
+    - pinballoutreach
+id: pophqhours_2
+theme: pinballoutreach
+region: content_sidebar
+weight: -9
+provider: null
+plugin: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
+settings:
+  id: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
+  label: 'POP HQ Hours'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

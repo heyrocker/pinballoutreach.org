@@ -1,4 +1,4 @@
-uuid: 364dbc7a-1848-47ce-9b00-b7b4ae99281a
+uuid: 741c9dd1-ab6d-4ffa-b13b-590a8c29aca2
 langcode: en
 status: false
 dependencies:
@@ -9,10 +9,10 @@ dependencies:
     - views
   theme:
     - pinballoutreach
-id: pinballoutreach_views_block__homepage_image_block_1
+id: views_block__homepage_image_block_1_2
 theme: pinballoutreach
 region: '-1'
-weight: -6
+weight: -10
 provider: null
 plugin: 'views_block:homepage_image-block_1'
 settings:
