@@ -1,0 +1,14 @@
+uuid: 040b40a9-f743-42a6-9438-5669c42958e6
+langcode: en
+status: true
+dependencies: {  }
+name: 16_9_max_1300
+label: '16:9 Max 1300'
+effects:
+  fe16a307-ffe6-4b41-b733-51a1a47ff076:
+    uuid: fe16a307-ffe6-4b41-b733-51a1a47ff076
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1300
+      height: 731

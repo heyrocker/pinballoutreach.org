@@ -1,0 +1,14 @@
+uuid: 361d8a1c-a877-45ab-8f07-7c9dce757eaa
+langcode: en
+status: true
+dependencies: {  }
+name: max_2600_16_9
+label: '16:9 Max 2600'
+effects:
+  11f5c7bd-29f2-489e-b200-e06cc686be62:
+    uuid: 11f5c7bd-29f2-489e-b200-e06cc686be62
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2600
+      height: 1463

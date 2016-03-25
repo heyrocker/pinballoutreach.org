@@ -110,7 +110,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: wide
+            responsive_image_style: wide_16_9
             image_link: ''
           group_column: ''
           group_columns: {  }
