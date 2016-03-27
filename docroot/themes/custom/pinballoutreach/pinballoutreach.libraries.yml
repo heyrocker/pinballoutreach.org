@@ -20,3 +20,12 @@ droid-serif:
   css:
     theme:
       https://fonts.googleapis.com/css?family=Droid%20Serif: { type: external }
+
+arvo:
+  remote: http://files.korkork.com/index.php?/fonts/arvo/
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Arvo: { type: external }
