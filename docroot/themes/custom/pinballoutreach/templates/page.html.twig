@@ -15,25 +15,29 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    {% if page.content_hero %}
-      <div class="content-hero">
-        {{ page.content_hero }}
-      </div>
-    {% endif %}
-
-    {% if page.content or page.content_sidebar %}
-      <div class="content-main-container grid-row">
-        <div class="content-main">
-          {{ page.content }}
+    {% block content_hero %}
+      {% if page.content_hero %}
+        <div class="content-hero">
+          {{ page.content_hero }}
         </div>
+      {% endif %}
+    {% endblock content_hero %}
 
-        {% if page.content_sidebar %}
-          <div class="content-sidebar">
-            {{ page.content_sidebar }}
+    {% block content_main %}
+      {% if page.content or page.content_sidebar %}
+        <div class="content-main-container grid-row">
+          <div class="content-main">
+            {{ page.content }}
           </div>
-        {% endif %}
-      </div>
-    {% endif %}
+
+          {% if page.content_sidebar %}
+            <div class="content-sidebar">
+              {{ page.content_sidebar }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endblock %}
 
     {% if page.content_bottom %}
       <div class="content-bottom">
@@ -42,25 +46,31 @@
     {% endif %}
   </main>
 
-  {% if page.featured_first or page.featured_second or page.featured_third %}
-    <div class="featured grid-row">
-      {{ page.featured_first }}
-      {{ page.featured_second }}
-      {{ page.featured_third }}
-    </div>
-  {% endif %}
+  {% block featured %}
+    {% if page.featured_first or page.featured_second or page.featured_third %}
+      <div class="featured grid-row">
+        {{ page.featured_first }}
+        {{ page.featured_second }}
+        {{ page.featured_third }}
+      </div>
+    {% endif %}
+  {% endblock %}
 
-  {% if page.secondary_first or page.secondary_second %}
-    <div class="secondary grid-row">
-      {{ page.secondary_first }}
-      {{ page.secondary_second }}
-    </div>
-  {% endif %}
+  {% block secondary %}
+    {% if page.secondary_first or page.secondary_second %}
+      <div class="secondary grid-row">
+        {{ page.secondary_first }}
+        {{ page.secondary_second }}
+      </div>
+    {% endif %}
+  {% endblock %}
 
-  {% if page.footer %}
-    <footer class="footer" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+  {% block footer %}
+    {% if page.footer %}
+      <footer class="footer" role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    {% endif %}
+  {% endblock %}
 
 </div>
