@@ -22,10 +22,14 @@ html {
 
 .views-field-field-homepage-image-quote {
   width: 400px;
-  position: relative;
-  top: -225px;
-  float: right;
+  position: absolute;
   background: rgba(204, 204, 204, .7);
+  bottom: 35px;
+  right: 35px;
+}
+
+.view-homepage-image .views-row {
+  position: relative;
 }
 
 
