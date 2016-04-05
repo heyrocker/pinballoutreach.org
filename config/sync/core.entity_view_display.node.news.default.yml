@@ -12,7 +12,6 @@ dependencies:
     - node.type.news
   module:
     - image
-    - link
     - text
     - user
 id: node.news.default
@@ -23,30 +22,20 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
   field_news_photos:
-    weight: 3
+    weight: 1
     label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-  field_product_related_links:
-    weight: 4
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
 hidden:
   field_hero_image: true
   field_news_deck: true
   field_news_news_type: true
+  field_product_related_links: true
   links: true
