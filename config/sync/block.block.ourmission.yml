@@ -1,0 +1,31 @@
+uuid: 00b11022-b7b1-475d-af00-f3e43cc4dbb6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:96476dff-4f13-4fd0-8f00-f12475efc680'
+  module:
+    - block_content
+    - system
+  theme:
+    - pinballoutreach
+id: ourmission
+theme: pinballoutreach
+region: content_hero
+weight: -9
+provider: null
+plugin: 'block_content:96476dff-4f13-4fd0-8f00-f12475efc680'
+settings:
+  id: 'block_content:96476dff-4f13-4fd0-8f00-f12475efc680'
+  label: 'Our Mission'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

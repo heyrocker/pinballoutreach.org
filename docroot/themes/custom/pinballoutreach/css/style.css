@@ -69,6 +69,10 @@ html {
   font-family: droid-serif;
 }
 
+.content-hero .block {
+  text-align: center;
+}
+
 .content-sidebar {
   order: 3;
   flex-basis: 25%;
@@ -181,4 +185,13 @@ h2 {
 .field-content li {
   list-style: none outside;
   margin: 0 0 0.5em 0;
+}
+
+.mission-features {
+  display: flex;
+  flex-flow: row;
+}
+
+.mission-features .feature {
+  flex-basis: 25%;
 }

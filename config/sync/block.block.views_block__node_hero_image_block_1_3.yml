@@ -12,7 +12,7 @@ dependencies:
 id: views_block__node_hero_image_block_1_3
 theme: pinballoutreach
 region: content_hero
-weight: -11
+weight: -10
 provider: null
 plugin: 'views_block:node_hero_image-block_1'
 settings:
