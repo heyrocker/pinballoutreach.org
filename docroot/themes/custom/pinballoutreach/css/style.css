@@ -155,6 +155,7 @@ h2 {
 
 .primary-menu {
   height: 100px;
+  width: 100%;
   background: no-repeat url(/themes/custom/pinballoutreach/images/Logo-Index1.png);
   background-position: left center;
 }
@@ -195,3 +196,23 @@ h2 {
 .mission-features .feature {
   flex-basis: 25%;
 }
+
+.donate-link a {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+  padding: 20px 30px 20px 30px;
+  background-color: #de1e1e;
+  margin-top: -40px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+.region-primary-menu {
+  width: 100%;
+}
+
