@@ -2,6 +2,10 @@ html {
   font-family: 'Droid Sans';
 }
 
+h2 a {
+  text-decoration: none;
+}
+
 .node--view-mode-homepage-quote .field--name-body {
   font-family: 'Droid Serif';
   color: white;
@@ -80,18 +84,31 @@ html {
   margin-right: 30px;
 }
 
+.region-featured-first .block,
+.region-featured-second .block,
+.region-featured-third .block,
+.secondary .block,
 .content-sidebar .block {
   background-color: #f0f3f2;
-  padding: 0px 30px 30px 30px;
   margin-top: 30px;
   text-align: center;
   font-size: 80%;
+  height: 100%;
 }
 
+.featured .node__content {
+  padding: 0px 20px 20px 20px;
+}
+
+.featured .field--name-field-block-promo-link {
+  padding-bottom: 20px;;
+}
+
+.featured .block h2,
+.secondary .block h2,
 .content-sidebar .block h2 {
   background-color: #4e8bb2;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 
@@ -118,8 +135,7 @@ html {
 .region-featured-first {
   order: 5;
   flex-basis:33%;
-  border: 1px solid #000000;
-  padding: 0px 30px 30px 30px;
+  padding: 0px 10px 30px 10px;
   text-align: center;
 }
 
@@ -127,7 +143,6 @@ html {
 .region-secondary-second {
  order: 6;
  flex-basis: 50%;
- border: 1px solid #000000;
  padding: 0px 30px 30px 30px;
  text-align: center;
 }
@@ -145,6 +160,10 @@ html {
 .menu li {
   float: left;
   margin-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
 }
 
 h2 {
@@ -195,6 +214,9 @@ h2 {
 
 .mission-features .feature {
   flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .donate-link a {
@@ -209,10 +231,23 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .region-primary-menu {
   width: 100%;
 }
 
+.mission-features h3 {
+  width: 45%;
+  padding: 20px 30px 20px 30px;
+  background-color: #de1e1e;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
