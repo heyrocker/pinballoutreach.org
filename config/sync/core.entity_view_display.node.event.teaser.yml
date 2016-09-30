@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.field_event_deck
     - field.field.node.event.field_event_description
-    - field.field.node.event.field_event_end_date
     - field.field.node.event.field_event_event_type
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_location_address
@@ -55,7 +54,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_event_description: true
-  field_event_end_date: true
   field_event_event_type: true
   field_event_location_address: true
   links: true

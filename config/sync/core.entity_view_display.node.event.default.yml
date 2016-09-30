@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.event.field_event_deck
     - field.field.node.event.field_event_description
-    - field.field.node.event.field_event_end_date
     - field.field.node.event.field_event_event_type
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_location_address
@@ -29,14 +28,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-  field_event_end_date:
-    weight: 3
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: long
-    third_party_settings: {  }
-    type: datetime_default
   field_event_event_type:
     weight: 6
     label: hidden
