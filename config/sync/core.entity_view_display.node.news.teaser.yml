@@ -10,10 +10,8 @@ dependencies:
     - field.field.node.news.field_news_news_type
     - field.field.node.news.field_news_photos
     - field.field.node.news.field_product_related_links
-    - image.style.medium
     - node.type.news
   module:
-    - image
     - text
     - user
 id: node.news.teaser
@@ -21,22 +19,15 @@ targetEntityType: node
 bundle: news
 mode: teaser
 content:
-  field_hero_image:
-    type: image
-    weight: 0
-    label: hidden
-    settings:
-      image_style: medium
-      image_link: content
-    third_party_settings: {  }
   field_news_deck:
     type: text_default
-    weight: 1
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
   body: true
+  field_hero_image: true
   field_news_news_type: true
   field_news_photos: true
   field_product_related_links: true
