@@ -6,7 +6,7 @@ dependencies:
     - 'block_content:basic:b030a843-4c08-4037-8a49-73deabaf88bd'
   module:
     - block_content
-    - node
+    - system
   theme:
     - pinballoutreach
 id: pophqhours_2
@@ -17,19 +17,15 @@ provider: null
 plugin: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
 settings:
   id: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
-  label: 'POP HQ Hours Through 3/20'
+  label: 'POP HQ Hours'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      event: event
-      news: news
-      page: page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
