@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
 settings:
   id: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
-  label: 'POP HQ Hours'
+  label: 'POP HQ Hours Through 3/20'
   provider: block_content
   label_display: visible
   status: true
@@ -27,7 +27,9 @@ visibility:
   node_type:
     id: node_type
     bundles:
+      event: event
       news: news
+      page: page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
