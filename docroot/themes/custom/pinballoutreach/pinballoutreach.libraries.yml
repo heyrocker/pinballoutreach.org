@@ -2,6 +2,10 @@ global-css:
   css:
     theme:
       css/style.css: {}
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/jquery
 
 droid-sans:
   remote: http://www.droidfonts.com/info/droid-sans-fonts/
@@ -29,3 +33,16 @@ arvo:
   css:
     theme:
       https://fonts.googleapis.com/css?family=Arvo: { type: external }
+
+smartmenus:
+  version: 1.0.0
+  css:
+    component:
+      libraries/smartmenus/css/sm-core-css.css: {}
+    theme:
+      css/smartmenus.css: {}
+  js:
+    libraries/smartmenus/jquery.smartmenus.min.js: { minified: true }
+    libraries/smartmenus/addons/keyboard/jquery.smartmenus.keyboard.min.js: { minified: true }
+  dependencies:
+    - core/jquery

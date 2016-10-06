@@ -152,12 +152,12 @@ h2 a {
   flex-basis: 100%;
 }
 
-.primary-menu ul.menu {
+.primary-menu .sb {
   margin-left: 150px;
   margin-top: 62px;
 }
 
-.menu li {
+.primary-menu .sb > li {
   float: left;
   margin-right: 20px;
 }
