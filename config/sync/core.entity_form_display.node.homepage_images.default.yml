@@ -9,6 +9,7 @@ dependencies:
     - node.type.homepage_images
   module:
     - image
+    - inline_entity_form
     - path
 id: node.homepage_images.default
 targetEntityType: node
@@ -30,27 +31,19 @@ content:
   field_homepage_image_quote:
     weight: 32
     settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      override_labels: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
   path:
     type: path
     weight: 30
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -67,4 +60,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  sticky: true
