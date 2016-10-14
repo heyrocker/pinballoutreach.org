@@ -1,0 +1,28 @@
+uuid: 891e639d-e2e2-4a5d-8797-59b94ad63bb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_gallery
+    - node.type.image_gallery
+    - node.type.news
+id: node.news.field_image_gallery
+field_name: field_image_gallery
+entity_type: node
+bundle: news
+label: 'Image Gallery'
+description: 'Choose or create an Image Gallery to display along with this news item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      image_gallery: image_gallery
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
