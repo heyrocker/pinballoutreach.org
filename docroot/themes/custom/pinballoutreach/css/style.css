@@ -208,11 +208,13 @@ h2 {
   background-position: left center;
 }
 
+.field--name-field-images,
 .field--name-field-news-photos {
   display: flex;
   flex-flow: wrap;
 }
 
+.field--name-field-images .field__item,
 .field--name-field-news-photos .field__item {
   margin-right: 15px;
   margin-botton: 20px;
