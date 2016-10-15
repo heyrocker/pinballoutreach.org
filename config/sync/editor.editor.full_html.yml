@@ -17,11 +17,20 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
             - Superscript
             - Subscript
             - '-'
             - RemoveFormat
+            - Format
+        -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
         -
           name: Linking
           items:
@@ -32,6 +41,8 @@ settings:
           items:
             - BulletedList
             - NumberedList
+            - Indent
+            - Outdent
         -
           name: Media
           items:
@@ -40,10 +51,6 @@ settings:
             - Table
             - HorizontalRule
         -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
           name: Tools
           items:
             - ShowBlocks
@@ -51,6 +58,8 @@ settings:
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
