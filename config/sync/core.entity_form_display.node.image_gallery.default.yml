@@ -1,0 +1,68 @@
+uuid: cb872e7d-45b6-4b20-9bc4-83d734e30b7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.image_gallery.field_description
+    - field.field.node.image_gallery.field_hero_image
+    - field.field.node.image_gallery.field_images
+    - image.style.thumbnail
+    - node.type.image_gallery
+  module:
+    - image
+    - path
+    - text
+id: node.image_gallery.default
+targetEntityType: node
+bundle: image_gallery
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    weight: 31
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_hero_image:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_images:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,21 @@
+uuid: 9b49e738-d12e-4411-969d-610511c73832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.image_gallery
+  module:
+    - text
+id: node.image_gallery.field_description
+field_name: field_description
+entity_type: node
+bundle: image_gallery
+label: Description
+description: 'Description of this Image Gallery, can use formatting.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

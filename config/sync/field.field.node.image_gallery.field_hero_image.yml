@@ -1,31 +1,31 @@
-uuid: becc732c-8a0b-42cb-b908-8fc7a28e4f03
+uuid: 991ba69a-32f0-4d85-a58f-83b657f741b8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_news_photos
-    - node.type.news
+    - field.storage.node.field_hero_image
+    - node.type.image_gallery
   module:
     - image
-id: node.news.field_news_photos
-field_name: field_news_photos
+id: node.image_gallery.field_hero_image
+field_name: field_hero_image
 entity_type: node
-bundle: news
-label: Photos
-description: 'Upload any photos related to this news item.'
+bundle: image_gallery
+label: 'Hero Image'
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '5 MB'
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
   alt_field_required: false
-  title_field: true
+  title_field: false
   title_field_required: false
   default_image:
     uuid: ''

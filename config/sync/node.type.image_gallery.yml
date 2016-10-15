@@ -1,0 +1,17 @@
+uuid: 31710a17-4e25-4fd4-a3b3-b3e9d1c7ed56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Image Gallery'
+type: image_gallery
+description: 'An Image Gallery for display alone on the website or linked to a piece of news.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
