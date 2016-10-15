@@ -1,0 +1,24 @@
+uuid: fb11dc86-4aa0-4325-a908-657296368392
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: event_news_and_image_gallery_content
+label: 'Event, News and Image Gallery content'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  517eeab8-4744-44aa-890c-1fc2474c4d65:
+    id: node_type
+    bundles:
+      event: event
+      image_gallery: image_gallery
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 517eeab8-4744-44aa-890c-1fc2474c4d65
+selection_logic: and
+weight: -5
+relationships: {  }
