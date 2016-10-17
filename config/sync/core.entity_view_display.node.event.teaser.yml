@@ -11,11 +11,9 @@ dependencies:
     - field.field.node.event.field_event_location_address
     - field.field.node.event.field_event_photo
     - field.field.node.event.field_event_start_date
-    - image.style.medium
     - node.type.event
   module:
     - datetime
-    - image
     - text
     - user
 id: node.event.teaser
@@ -25,28 +23,13 @@ mode: teaser
 content:
   field_event_deck:
     type: text_default
-    weight: 1
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_event_location:
-    type: string
-    weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_event_photo:
-    type: image
-    weight: 0
-    label: hidden
-    settings:
-      image_style: medium
-      image_link: content
-    third_party_settings: {  }
   field_event_start_date:
     type: datetime_default
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       timezone_override: ''
@@ -55,5 +38,7 @@ content:
 hidden:
   field_event_description: true
   field_event_event_type: true
+  field_event_location: true
   field_event_location_address: true
+  field_event_photo: true
   links: true

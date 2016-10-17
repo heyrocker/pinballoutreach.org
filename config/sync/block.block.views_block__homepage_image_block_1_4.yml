@@ -1,0 +1,32 @@
+uuid: 17d84b2e-1358-4778-95e5-817d81f1e64d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_image
+  module:
+    - node
+    - views
+  theme:
+    - pinballoutreach
+id: views_block__homepage_image_block_1_4
+theme: pinballoutreach
+region: content_hero
+weight: -11
+provider: null
+plugin: 'views_block:homepage_image-block_1'
+settings:
+  id: 'views_block:homepage_image-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -46,3 +46,12 @@ smartmenus:
     libraries/smartmenus/addons/keyboard/jquery.smartmenus.keyboard.min.js: { minified: true }
   dependencies:
     - core/jquery
+
+allerta:
+  remote: http://matt.cc/
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Allerta: { type: external }

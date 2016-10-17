@@ -26,6 +26,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
+      image_gallery: image_gallery
       news: news
     negate: false
     context_mapping:

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_homepage_image
     - field.storage.node.field_homepage_image_quote
     - node.type.homepage_images
+    - responsive_image.styles.wide_16_9
   module:
     - node
     - responsive_image
@@ -30,7 +31,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -217,9 +218,9 @@ display:
           group_type: group
           admin_label: ''
           order: ASC
-          exposed: false
+          exposed: true
           expose:
-            label: ''
+            label: Random
           plugin_id: random
       title: 'Homepage Image'
       header: {  }
@@ -233,6 +234,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -250,6 +252,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
         - user.permissions
       tags:
