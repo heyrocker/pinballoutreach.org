@@ -18,8 +18,8 @@ content:
     weight: 31
     settings:
       rows: 9
-      placeholder: ''
       summary_rows: 3
+      placeholder: ''
     third_party_settings: {  }
   created:
     type: datetime_timestamp
@@ -30,6 +30,18 @@ content:
     type: path
     weight: 30
     settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -46,6 +58,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  promote: true
-  sticky: true
+hidden: {  }
