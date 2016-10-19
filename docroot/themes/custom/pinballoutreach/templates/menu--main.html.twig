@@ -25,6 +25,12 @@
 
 {% import _self as menus %}
 
+<!-- Mobile menu toggle button (hamburger/x icon) -->
+<input id="burger-toggler--state" class="burger-toggler--state element-invisible" type="checkbox" />
+<label class="burger-toggler__button" for="burger-toggler--state">
+  <span class="burger-toggler__button-icon"></span><span class="burger-toggler__button-text">Menu</span>
+  <span class="burger-toggler__assistive-text element-invisible">Toggle main menu visibility</span>
+</label>
 {#
   We call a macro which calls itself to render the full tree.
   @see http://twig.sensiolabs.org/doc/tags/macro.html
