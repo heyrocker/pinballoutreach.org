@@ -302,6 +302,14 @@ h2 {
   text-transform: uppercase;
 }
 
+.primary-menu {
+  height: 100px;
+  width: 100%;
+  background: no-repeat url(/themes/custom/pinballoutreach/images/Logo-Index1.png);
+  background-position: left center;
+}
+
+.field--name-field-images,
 .field--name-field-news-photos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,6 +318,7 @@ h2 {
       flex-flow: wrap;
 }
 
+.field--name-field-images .field__item,
 .field--name-field-news-photos .field__item {
   margin-right: 15px;
   margin-botton: 20px;
@@ -423,4 +432,8 @@ h2 {
 
 .block .views-row .views-field-title {
   margin-bottom: 8px;
+}
+
+.node--type-page img.align-left{
+  padding: 0 15px 0 0;
 }

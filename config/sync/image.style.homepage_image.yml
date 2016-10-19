@@ -1,13 +1,15 @@
 uuid: 8d9e72af-4482-48ac-ab09-9fe4e7134f91
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: homepage_image
 label: 'Homepage Image'
 effects:
   d6153f85-2647-43ca-ab00-ac0371348e64:
     uuid: d6153f85-2647-43ca-ab00-ac0371348e64
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 1600
