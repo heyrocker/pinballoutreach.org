@@ -5,7 +5,14 @@ description: 'Custom theme for Pinball Outreach Project'
 core: 8.x
 base theme: classy
 package: Custom
-
+libraries:
+  - pinballoutreach/global-css
+  - pinballoutreach/droid-sans
+  - pinballoutreach/droid-serif
+  - pinballoutreach/arvo
+  - pinballoutreach/allerta
+ckeditor_stylesheets:
+  - css/style.css
 regions:
   header: 'Header'
   primary_menu: 'Primary Menu'
@@ -20,11 +27,3 @@ regions:
   secondary_first: 'Secondary First'
   secondary_second: 'Secondary Second'
   footer: 'Footer'
-
-libraries:
-  - pinballoutreach/global-css
-  - pinballoutreach/droid-sans
-  - pinballoutreach/droid-serif
-  - pinballoutreach/arvo
-  - pinballoutreach/allerta
-
