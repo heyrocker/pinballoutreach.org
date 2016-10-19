@@ -1,13 +1,15 @@
 uuid: b58b498b-d3a1-49bf-b629-414be80efc3a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: 16_9_max_325
 label: '16:9 Max 325'
 effects:
   01f456c4-4244-4883-8e00-e5ecb6c02cbf:
     uuid: 01f456c4-4244-4883-8e00-e5ecb6c02cbf
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 325
