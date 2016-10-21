@@ -12,7 +12,7 @@ libraries:
   - pinballoutreach/arvo
   - pinballoutreach/allerta
 ckeditor_stylesheets:
-  - css/style.css
+  - css/elements.css
 regions:
   header: 'Header'
   primary_menu: 'Primary Menu'
