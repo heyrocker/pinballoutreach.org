@@ -164,10 +164,6 @@ h2 a {
   height: 100%;
 }
 
-.featured .node__content {
-  padding: 0px 20px 20px 20px;
-}
-
 .featured .field--name-field-block-promo-link {
   padding-bottom: 20px;;
 }
@@ -208,7 +204,7 @@ h2 a {
           order: 5;
   -ms-flex-preferred-size:33%;
       flex-basis:33%;
-  padding: 0px 10px 30px 10px;
+  margin: 0px 20px 30px 20px;
   text-align: center;
 }
 
@@ -219,7 +215,7 @@ h2 a {
          order: 6;
  -ms-flex-preferred-size: 50%;
      flex-basis: 50%;
- padding: 0px 30px 30px 30px;
+ margin: 0px 20px 30px 20px;
  text-align: center;
 }
 
