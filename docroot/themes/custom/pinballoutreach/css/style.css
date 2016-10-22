@@ -19,9 +19,10 @@ h2 a {
   font-style: italic;
 }
 
-.node--view-mode-homepage-quote .field--name-body {
-  font-family: 'Droid Serif';
-  font-size: 150%;
+.node--view-mode-homepage-quote p {
+  line-height: 22px;
+  font-size: 100%;
+  margin-top: 0px;
 }
 
 .node--view-mode-homepage-quote .field--name-field-quote-person-quoted,
@@ -31,7 +32,7 @@ h2 a {
 }
 
 .node--view-mode-homepage-quote .node__content {
-  padding: 0px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
   vertical-align: middle;
 }
 
@@ -56,6 +57,20 @@ h2 a {
     position: absolute;
     bottom: 35px;
     right: 35px;
+  }
+
+  .node--view-mode-homepage-quote p {
+    font-size: 130%;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+
+  .mission-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
   }
 }
 
@@ -321,14 +336,6 @@ h2 a {
   margin: 0 0 0.5em 0;
 }
 
-.mission-features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row;
-      flex-flow: row;
-}
-
 .mission-features .feature {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
@@ -362,7 +369,6 @@ h2 a {
 }
 
 .mission-features h3 {
-  width: 45%;
   padding: 20px 30px 20px 30px;
   background-color: #de1e1e;
   border-radius: 20px;
@@ -370,7 +376,6 @@ h2 a {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  letter-spacing: 1px;
   margin-top: 0px;
   margin-bottom: 30px;
 }
