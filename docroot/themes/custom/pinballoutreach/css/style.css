@@ -408,6 +408,14 @@ img.align-left{
   padding: 20px 20px 20px 20px;
 }
 
+.content-sidebar p {
+  font-size: 100%;
+}
+
+.content-sidebar h2 {
+  font-size: 120%;
+}
+
 .featured .node__content,
 .featured .text-formatted {
   padding: 0px 30px 0px 30px;
