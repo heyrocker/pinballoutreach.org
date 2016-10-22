@@ -175,7 +175,6 @@ h2 a {
   background-color: #f0f3f2;
   margin-top: 30px;
   text-align: center;
-  font-size: 80%;
   height: 100%;
 }
 
@@ -380,22 +379,6 @@ h2 a {
   margin-bottom: 30px;
 }
 
-#block-pophqhours p,
-#block-pophqhours-2 p {
-  margin-bottom: 3px;
-  margin-top: 0px;
-}
-
-#block-pophqhours h3,
-#block-pophqhours-2 h3 {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-#block-pophqhours-2 h3 {
-  padding-bottom: 5px;
-}
-
 .element-invisible {
   position: absolute;
   width: 1px;
@@ -409,7 +392,6 @@ h2 a {
 
 .block .views-row a,
 .block li a {
-  font-size: 120%;
   text-decoration: none;
 }
 
@@ -424,4 +406,22 @@ img.align-left{
 .content-sidebar .view-content,
 .content-sidebar .text-formatted {
   padding: 20px 20px 20px 20px;
+}
+
+.featured .node__content,
+.featured .text-formatted {
+  padding: 0px 30px 0px 30px;
+}
+
+.featured p {
+  font-size: 120%;
+  line-height: 25px;
+}
+
+.featured .block-block-content h2 {
+  margin-bottom: 30px;
+}
+
+.featured h2 {
+  font-size: 150%;
 }
