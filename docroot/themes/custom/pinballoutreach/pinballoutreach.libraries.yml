@@ -36,11 +36,14 @@ arvo:
       https://fonts.googleapis.com/css?family=Arvo: { type: external }
 
 smartmenus:
+  remote: https://github.com/vadikom/smartmenus
   version: 1.0.0
+  license:
+    name: MIT
+    url: https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
   css:
-    component:
-      libraries/smartmenus/css/sm-core-css.css: {}
     theme:
+      libraries/smartmenus/css/sm-core-css.css: {}
       css/smartmenus.css: {}
   js:
     libraries/smartmenus/jquery.smartmenus.min.js: { minified: true }

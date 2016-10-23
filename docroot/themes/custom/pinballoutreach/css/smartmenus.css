@@ -1,3 +1,7 @@
+.primary-menu {
+  position: relative;
+}
+
 .main-menu--level-0,
 ul.main-menu--level-0 {
   margin: 0;
@@ -192,6 +196,30 @@ ul.main-menu--level-0 {
 .main-menu--level-0 li {
   border-top: 0.0625em solid rgba(0, 0, 0, 0.05);
 }
+.main-menu--level-0 > li:last-child {
+  border: 0;
+  text-align: center;
+}
+
+.main-menu--level-0 > li:last-child > a {
+  display: inline-block;
+  -webkit-border-radius: 0.3125em;
+  -moz-border-radius: 0.3125em;
+  -ms-border-radius: 0.3125em;
+  -o-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  margin: 1em 0 0;
+  padding-right: 1.25em;
+  padding-left: 1.0625em;
+  border-radius: 1.34375em;
+  color: #fff;
+  background: #de1e1e;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
 .main-menu--level-0 > li:first-child {
   border-top: 0;
 }
@@ -317,6 +345,10 @@ ul.main-menu--level-0 {
     padding-left: 1.25em;
   }
 
+  .main-menu--level-0 > li:last-child > a {
+    margin: 0 0 0 0.5em;
+  }
+
   .main-menu--level-0 > li:nth-last-child(2) {
     background: #fff;
   }
@@ -328,17 +360,6 @@ ul.main-menu--level-0 {
 
   .main-menu--level-0 > li:last-child {
     background: #fff;
-  }
-
-  .main-menu--level-0 > li:last-child > a {
-    margin: 0 0 0 0.5em;
-    padding-right: 1.25em;
-    padding-left: 1.0625em;
-    border-radius: 1.34375em;
-    color: #fff;
-    background: #de1e1e;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
 
   .main-menu--level-0 > li > ul:before,
