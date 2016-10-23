@@ -1,3 +1,7 @@
+.view-photo-gallery-listing .views-col {
+  float: none;
+}
+
 .content-sidebar .block {
   margin: 0 30px 20px 30px;
 }
@@ -294,6 +298,10 @@ h3 a {
     margin-right: 30px;
   }
 
+  .view-photo-gallery-listing .views-col {
+    width: 30%;
+    float: left;
+  }
 }
 
 .primary-menu .sb {
@@ -452,8 +460,4 @@ img.align-left{
 
 .views-view-grid .views-row {
   margin-bottom: 30px;
-}
-
-.view-photo-gallery-listing .views-col {
-  width: 30%;
 }
