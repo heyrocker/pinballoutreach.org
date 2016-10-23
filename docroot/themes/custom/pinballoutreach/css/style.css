@@ -1,3 +1,7 @@
+.content-sidebar .block {
+  margin: 0 30px 20px 30px;
+}
+
 html {
   font-family: 'Droid Sans';
 }
@@ -152,21 +156,11 @@ h3 a {
           order: 3;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  padding: 20px 100px 20px 100px;
+  padding: 20px 30px 20px 30px;
 }
 
 .content-hero .block {
   text-align: center;
-}
-
-.content-sidebar {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  margin-top: 10px;
-  margin-right: 30px;
 }
 
 .region-featured-first .block,
@@ -259,10 +253,14 @@ h3 a {
     width: auto;
     padding: 0.75em 0;
   }
-}
 
-.content-sidebar .block {
-  margin: 0 100px 20px 100px;
+  .content-sidebar .block {
+    margin: 0 50px 0 50px;
+  }
+  .content-main {
+    padding: 20px 50px 20px 50px;
+  }
+
 }
 
 @media (min-width: 68.5em) {
@@ -279,8 +277,23 @@ h3 a {
   }
 
   .content-sidebar .block {
-    margin: 0px 0px 20px 0px;
+    margin: 0 0px 20px 0px;
   }
+
+  .content-main {
+    padding: 20px 100px 20px 100px;
+  }
+
+  .content-sidebar {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+
 }
 
 .primary-menu .sb {
