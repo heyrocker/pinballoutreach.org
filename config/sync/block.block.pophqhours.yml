@@ -19,7 +19,7 @@ settings:
   id: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
   label: 'POP HQ Hours'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full

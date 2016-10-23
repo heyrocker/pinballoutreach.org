@@ -2,7 +2,9 @@ html {
   font-family: 'Droid Sans';
 }
 
-h2 a {
+h1 a,
+h2 a,
+h3 a {
   text-decoration: none;
 }
 
@@ -293,6 +295,7 @@ h2 a {
 
 .menu li a {
   text-decoration: none;
+  font-size: 120%
 }
 
 .block h2 {
@@ -432,4 +435,12 @@ img.align-left{
 
 .featured h2 {
   font-size: 150%;
+}
+
+.views-view-grid .views-row {
+  margin-bottom: 30px;
+}
+
+.view-photo-gallery-listing .views-col {
+  width: 30%;
 }
