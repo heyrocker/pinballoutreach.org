@@ -41,6 +41,7 @@ module:
   rdf: 0
   responsive_image: 0
   rest: 0
+  rh_node: 0
   search: 0
   serialization: 0
   shortcut: 0
