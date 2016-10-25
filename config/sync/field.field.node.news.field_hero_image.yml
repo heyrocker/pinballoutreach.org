@@ -28,11 +28,11 @@ settings:
   title_field: true
   title_field_required: false
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: 5d05736d-245a-405e-a915-07d1781a2fed
+    alt: 'Pinball Outreach Project News'
     title: ''
-    width: null
-    height: null
+    width: 650
+    height: 247
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
