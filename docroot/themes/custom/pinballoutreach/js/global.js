@@ -2,21 +2,14 @@
  * @file
  * Global JS For Pinball Outreach theme
  */
-(function ($, Drupal) {
+
+(function ($) {
 
 'use strict';
 
-/**
- * Initialize the menu JS
- */
-Drupal.behaviors.navTabs = {
-  attach: function (context, settings) {
-    var $mainMenu = $('.main-menu--level-0');
-    if ($mainMenu.length > 0 && typeof $mainMenu.smartmenus === 'function') {
-      $mainMenu.once('smartmenu').addClass('sm').smartmenus();
-    }
-  }
-};
+var $mainMenu = $('.main-menu--level-0');
+if ($mainMenu.length > 0 && typeof $mainMenu.smartmenus === 'function') {
+  $mainMenu.addClass('sm').smartmenus();
+}
 
-
-})(jQuery, Drupal);
+})(jQuery);
