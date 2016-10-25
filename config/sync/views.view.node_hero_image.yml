@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_hero_image
     - node.type.image_gallery
     - node.type.news
+    - node.type.page
     - responsive_image.styles.wide_16_9
   module:
     - node
@@ -146,6 +147,7 @@ display:
           admin_label: ''
           operator: in
           value:
+            page: page
             image_gallery: image_gallery
             news: news
           group: 1

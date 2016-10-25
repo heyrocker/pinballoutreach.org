@@ -28,6 +28,7 @@ visibility:
     bundles:
       image_gallery: image_gallery
       news: news
+      page: page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
