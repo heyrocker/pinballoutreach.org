@@ -1,0 +1,38 @@
+uuid: b8ed19e3-df27-4a32-8a7f-f8df9d7acac8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.press.field_press_date
+    - field.field.node.press.field_press_link
+    - node.type.press
+  module:
+    - datetime
+    - link
+    - user
+id: node.press.default
+targetEntityType: node
+bundle: press
+mode: default
+content:
+  field_press_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'F Y'
+    third_party_settings: {  }
+    type: datetime_custom
+  field_press_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      target: _blank
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+hidden:
+  links: true

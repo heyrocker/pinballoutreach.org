@@ -1,0 +1,17 @@
+uuid: d1acf4bb-9b91-4653-8827-83e53982bb49
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Press
+type: press
+description: 'Mentions of POP in the press, links to external sites.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

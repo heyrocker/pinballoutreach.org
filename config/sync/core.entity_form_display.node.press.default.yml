@@ -1,0 +1,41 @@
+uuid: 60df61f2-bf36-4c91-9c3b-76eec7ef20e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.press.field_press_date
+    - field.field.node.press.field_press_link
+    - node.type.press
+  module:
+    - datetime
+    - link
+id: node.press.default
+targetEntityType: node
+bundle: press
+mode: default
+content:
+  field_press_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_press_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

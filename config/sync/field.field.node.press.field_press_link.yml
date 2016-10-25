@@ -1,0 +1,23 @@
+uuid: 0c2e440d-ae9f-4cfc-a5c9-f64b2b8a4052
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_link
+    - node.type.press
+  module:
+    - link
+id: node.press.field_press_link
+field_name: field_press_link
+entity_type: node
+bundle: press
+label: Link
+description: 'Link to the external site.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
