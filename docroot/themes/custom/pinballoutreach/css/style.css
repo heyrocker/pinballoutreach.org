@@ -6,6 +6,14 @@
   margin: 0 30px 20px 30px;
 }
 
+.content-sidebar .block p,
+.featured p,
+.secondary p {
+  font-family: 'Droid sans', 'Lucida Grande', sans-serif
+}
+
+
+
 .content-main .node--view-mode-teaser .node__content {
   margin-top: 0px;
   font-size: 100%;
@@ -166,6 +174,7 @@
   margin-top: 30px;
   text-align: center;
   height: 100%;
+  font-family: 'Droid sans', 'Lucida Grande', sans-serif;
 }
 
 .featured .field--name-field-block-promo-link {
