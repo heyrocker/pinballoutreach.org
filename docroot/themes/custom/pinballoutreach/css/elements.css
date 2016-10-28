@@ -1,3 +1,17 @@
+html {
+    font-family: 'Droid Serif';
+}
+
+h1 a,
+h2 a,
+h3 a {
+    text-decoration: none;
+}
+
+body ul {
+    font-size: 120%
+}
+
 body p {
     font-size: 120%;
     line-height: 28px;

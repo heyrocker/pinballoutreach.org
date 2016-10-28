@@ -6,16 +6,6 @@
   margin: 0 30px 20px 30px;
 }
 
-html {
-  font-family: 'Droid Sans';
-}
-
-h1 a,
-h2 a,
-h3 a {
-  text-decoration: none;
-}
-
 .content-main .node--view-mode-teaser .node__content {
   margin-top: 0px;
   font-size: 100%;
