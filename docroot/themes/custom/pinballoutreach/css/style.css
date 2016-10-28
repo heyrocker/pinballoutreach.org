@@ -235,6 +235,8 @@
 .primary-menu {
   width: 100%;
   background-position: left center;
+  font-family: 'Droid sans', 'Lucida Grande', sans-serif;
+  font-size: 85%;
 }
 
 @media (min-width: 48em) {
