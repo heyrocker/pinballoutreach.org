@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_hero_image
-    - field.field.node.news.field_image_gallery
+    - field.field.node.news.field_images
     - field.field.node.news.field_news_deck
     - field.field.node.news.field_news_news_type
     - field.field.node.news.field_product_related_links
@@ -13,9 +13,7 @@ dependencies:
     - node.type.news
   module:
     - image
-    - inline_entity_form
     - link
-    - path
     - text
 id: node.news.default
 targetEntityType: node
@@ -32,7 +30,7 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
   field_hero_image:
@@ -42,18 +40,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-  field_image_gallery:
+  field_images:
     weight: 4
     settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: inline_entity_form_complex
+    type: image_image
   field_news_deck:
     weight: 2
     settings:
@@ -68,11 +61,6 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
-  path:
-    type: path
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -82,6 +70,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_news_news_type: true
+  path: true
   promote: true
   sticky: true
   uid: true

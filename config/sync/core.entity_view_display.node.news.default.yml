@@ -5,12 +5,13 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_hero_image
-    - field.field.node.news.field_image_gallery
+    - field.field.node.news.field_images
     - field.field.node.news.field_news_deck
     - field.field.node.news.field_news_news_type
     - field.field.node.news.field_product_related_links
     - node.type.news
   module:
+    - image
     - text
     - user
 id: node.news.default
@@ -24,14 +25,14 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_image_gallery:
+  field_images:
     weight: 1
     label: hidden
     settings:
-      view_mode: teaser
-      link: false
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: image
 hidden:
   field_hero_image: true
   field_news_deck: true

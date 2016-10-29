@@ -28,7 +28,7 @@ settings:
   title_field: true
   title_field_required: false
   default_image:
-    uuid: d40dafcc-3b01-4778-b818-29de3b03aac3
+    uuid: 5d05736d-245a-405e-a915-07d1781a2fed
     alt: 'Pinball Outreach Project News'
     title: ''
     width: 650

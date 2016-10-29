@@ -1,3 +1,14 @@
+.region-content-hero .views-field-title {
+  margin-top: -125px;
+  font-size: 135%;
+}
+
+.region-content-hero .views-field-title h1 {
+  color: white;
+  text-shadow: 0px 0px 4px #ff0000;
+  margin-bottom: 55px;
+}
+
 .view-photo-gallery-listing .views-col {
   float: none;
 }
@@ -338,7 +349,7 @@
 .field--name-field-images .field__item,
 .field--name-field-news-photos .field__item {
   margin-right: 15px;
-  margin-botton: 20px;
+  margin-bottom: 15px;
 }
 
 .field--name-field-product-related-links {

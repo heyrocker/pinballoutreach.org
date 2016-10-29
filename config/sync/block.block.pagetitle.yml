@@ -8,7 +8,7 @@ dependencies:
     - pinballoutreach
 id: pagetitle
 theme: pinballoutreach
-region: content_main
+region: '-1'
 weight: -12
 provider: null
 plugin: page_title_block
