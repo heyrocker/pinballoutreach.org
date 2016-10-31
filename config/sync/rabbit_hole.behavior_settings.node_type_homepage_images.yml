@@ -1,9 +1,0 @@
-uuid: 6c5f73a1-4cbd-4e1e-a762-8bf12929ab4c
-langcode: en
-status: true
-dependencies: {  }
-id: node_type_homepage_images
-action: page_redirect
-allow_override: 0
-redirect: /
-redirect_code: 301

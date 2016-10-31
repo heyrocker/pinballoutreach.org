@@ -1,9 +1,0 @@
-uuid: b2a18eb6-38fe-43c4-a2e5-f38ad54c7c6b
-langcode: en
-status: true
-dependencies: {  }
-id: user_user
-action: access_denied
-allow_override: 1
-redirect: ''
-redirect_code: 301
