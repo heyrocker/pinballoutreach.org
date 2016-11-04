@@ -20,6 +20,7 @@
 .content-sidebar .block p,
 .featured p,
 .secondary p {
+  font-size: 100%;
   font-family: 'Droid sans', 'Lucida Grande', sans-serif
 }
 
@@ -281,7 +282,7 @@
 
 @media (min-width: 68.5em) {
   .primary-menu {
-    padding: 1.25em 0 0;
+    padding: 1.95em 0 0;
   }
 
   .grid-row {
@@ -462,7 +463,6 @@ img.align-left{
 }
 
 .featured p {
-  font-size: 120%;
   line-height: 25px;
 }
 
