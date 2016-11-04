@@ -415,6 +415,10 @@
   margin-bottom: 30px;
 }
 
+.mission-features h3 a {
+  color: #ffffff;
+}
+
 .element-invisible {
   position: absolute;
   width: 1px;
