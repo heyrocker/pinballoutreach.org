@@ -6,13 +6,12 @@ dependencies:
     - 'block_content:basic:4f21a3ab-1a38-4479-87c8-d519f7695e0e'
   module:
     - block_content
-    - system
   theme:
     - pinballoutreach
 id: volunteernewsletter
 theme: pinballoutreach
 region: content_sidebar
-weight: -13
+weight: -10
 provider: null
 plugin: 'block_content:4f21a3ab-1a38-4479-87c8-d519f7695e0e'
 settings:
@@ -23,9 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    pages: /ways-to-help
-    negate: false
-    context_mapping: {  }
+visibility: {  }

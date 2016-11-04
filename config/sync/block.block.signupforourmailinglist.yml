@@ -11,7 +11,7 @@ dependencies:
 id: signupforourmailinglist
 theme: pinballoutreach
 region: content_sidebar
-weight: -12
+weight: -11
 provider: null
 plugin: 'block_content:1e2773de-49f3-49a4-abe9-2931cb413f4d'
 settings:

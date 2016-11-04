@@ -1,6 +1,6 @@
 uuid: d328275f-b36f-415e-a100-a8c3cd4a6e54
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.related_links_block
@@ -11,8 +11,8 @@ dependencies:
     - pinballoutreach
 id: views_block__related_links_block_block_1
 theme: pinballoutreach
-region: content_sidebar
-weight: -11
+region: '-1'
+weight: 0
 provider: null
 plugin: 'views_block:related_links_block-block_1'
 settings:
