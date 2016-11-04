@@ -1,0 +1,32 @@
+uuid: 9c62ff7c-735b-471c-b700-e8a2406f19c9
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.node_hero_image
+  module:
+    - node
+    - views
+  theme:
+    - pinballoutreach
+id: views_block__node_hero_image_block_1
+theme: pinballoutreach
+region: '-1'
+weight: -9
+provider: null
+plugin: 'views_block:node_hero_image-block_1'
+settings:
+  id: 'views_block:node_hero_image-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

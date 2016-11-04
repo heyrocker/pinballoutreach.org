@@ -1,0 +1,29 @@
+uuid: 7368c084-82f9-4932-be00-dbb1cdd3bb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - pinballoutreach
+id: mainnavigation
+theme: pinballoutreach
+region: primary_menu
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/admin/*\r\n"
+    negate: true
+    context_mapping: {  }

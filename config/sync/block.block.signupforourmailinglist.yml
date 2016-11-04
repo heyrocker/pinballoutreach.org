@@ -1,0 +1,25 @@
+uuid: 7ddb151c-334f-4178-80e6-435714be7cab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1e2773de-49f3-49a4-abe9-2931cb413f4d'
+  module:
+    - block_content
+  theme:
+    - pinballoutreach
+id: signupforourmailinglist
+theme: pinballoutreach
+region: content_sidebar
+weight: -11
+provider: null
+plugin: 'block_content:1e2773de-49f3-49a4-abe9-2931cb413f4d'
+settings:
+  id: 'block_content:1e2773de-49f3-49a4-abe9-2931cb413f4d'
+  label: 'POP Newsletter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

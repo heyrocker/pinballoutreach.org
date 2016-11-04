@@ -1,0 +1,30 @@
+uuid: 1c15fe64-81eb-45a6-b133-5100ce018f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.most_recent_news_block
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__most_recent_news_block_block_1
+theme: bartik
+region: featured_bottom_first
+weight: -7
+provider: null
+plugin: 'views_block:most_recent_news_block-block_1'
+settings:
+  id: 'views_block:most_recent_news_block-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

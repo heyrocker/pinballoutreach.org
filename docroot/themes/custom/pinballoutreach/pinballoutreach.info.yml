@@ -1,0 +1,30 @@
+# THEMENAME.info.yml file for Pinball Outreach Project theme
+name: Pinball Outreach Project
+type: theme
+description: 'Custom theme for Pinball Outreach Project'
+core: 8.x
+base theme: classy
+package: Custom
+libraries:
+  - pinballoutreach/smartmenus
+  - pinballoutreach/global-css
+  - pinballoutreach/droid-sans
+  - pinballoutreach/droid-serif
+  - pinballoutreach/arvo
+  - pinballoutreach/allerta
+ckeditor_stylesheets:
+  - css/elements.css
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  highlighted: 'Highlighted'
+  content_hero: 'Content Hero'
+  content_main: 'Content Main'
+  content_sidebar: 'Content Sidebar'
+  content_bottom: 'Content Bottom'
+  featured_first: 'Featured First'
+  featured_second: 'Featured Second'
+  featured_third: 'Featured Third'
+  secondary_first: 'Secondary First'
+  secondary_second: 'Secondary Second'
+  footer: 'Footer'

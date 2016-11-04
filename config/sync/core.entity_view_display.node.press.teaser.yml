@@ -1,0 +1,21 @@
+uuid: 13ac7ace-a7f6-4a36-ac21-4e103c540f8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.press.field_press_date
+    - field.field.node.press.field_press_link
+    - node.type.press
+  module:
+    - user
+id: node.press.teaser
+targetEntityType: node
+bundle: press
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_press_date: true
+  field_press_link: true

@@ -1,0 +1,26 @@
+uuid: 602b50a9-9d6a-43d4-9e0c-12e1fe9d3c72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_homepage_image_quote
+    - node.type.homepage_images
+    - node.type.quote
+id: node.homepage_images.field_homepage_image_quote
+field_name: field_homepage_image_quote
+entity_type: node
+bundle: homepage_images
+label: Quote
+description: 'The selected quote will be overlaid onto the image specified above.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      quote: quote
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: f5fbc29e-4ca7-4bd8-8407-7a1677e43306
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Quote
+type: quote
+description: 'A quote someone has given about POP, used to publicize our mission.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

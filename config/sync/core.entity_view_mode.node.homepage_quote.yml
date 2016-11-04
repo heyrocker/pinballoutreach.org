@@ -1,0 +1,10 @@
+uuid: b2686623-e2d4-4d1a-8900-f969bc630985
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.homepage_quote
+label: 'Homepage Quote'
+targetEntityType: node
+cache: true

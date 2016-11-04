@@ -1,0 +1,65 @@
+uuid: 61e8b276-6a27-477a-bd00-0ec81b65681d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_images.field_homepage_image
+    - field.field.node.homepage_images.field_homepage_image_quote
+    - image.style.thumbnail
+    - node.type.homepage_images
+  module:
+    - image
+    - inline_entity_form
+    - path
+id: node.homepage_images.default
+targetEntityType: node
+bundle: homepage_images
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_homepage_image:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_homepage_image_quote:
+    weight: 32
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,20 @@
+uuid: a2c0e3dd-87da-4630-ba0d-13ca17396f73
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pinballoutreach
+id: pinballoutreach_breadcrumbs
+theme: pinballoutreach
+region: '-1'
+weight: -13
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

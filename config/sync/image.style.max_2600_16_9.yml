@@ -1,0 +1,16 @@
+uuid: 361d8a1c-a877-45ab-8f07-7c9dce757eaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: max_2600_16_9
+label: '16:9 Max 2600'
+effects:
+  f1e38ea4-962b-4c5b-987a-ee618d2159c1:
+    uuid: f1e38ea4-962b-4c5b-987a-ee618d2159c1
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: '2600'
+      height: '800'

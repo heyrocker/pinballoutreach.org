@@ -1,0 +1,14 @@
+uuid: b2d5703a-7256-469b-b719-25209329ac28
+langcode: en
+status: true
+dependencies: {  }
+name: news_grid
+label: 'News Grid'
+effects:
+  2c9b6dd4-d13a-40e0-815d-93d6fd337016:
+    uuid: 2c9b6dd4-d13a-40e0-815d-93d6fd337016
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200

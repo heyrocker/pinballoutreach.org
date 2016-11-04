@@ -1,0 +1,61 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+      css/elements.css: {}
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/jquery
+
+droid-sans:
+  remote: http://www.droidfonts.com/info/droid-sans-fonts/
+  license:
+    name: Apache Version 2
+    url: http://www.droidfonts.com/licensing/
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Droid%20Sans: { type: external }
+
+droid-serif:
+  remote: http://www.droidfonts.com/info/droid-serif-fonts/
+  license:
+    name: Apache Version 2
+    url: http://www.droidfonts.com/licensing/
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Droid%20Serif: { type: external }
+
+arvo:
+  remote: http://files.korkork.com/index.php?/fonts/arvo/
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Arvo: { type: external }
+
+smartmenus:
+  remote: https://github.com/vadikom/smartmenus
+  version: 1.0.0
+  license:
+    name: MIT
+    url: https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
+  css:
+    theme:
+      libraries/smartmenus/css/sm-core-css.css: {}
+      css/smartmenus.css: {}
+  js:
+    libraries/smartmenus/jquery.smartmenus.min.js: { minified: true }
+    libraries/smartmenus/addons/keyboard/jquery.smartmenus.keyboard.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+
+allerta:
+  remote: http://matt.cc/
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Allerta: { type: external }

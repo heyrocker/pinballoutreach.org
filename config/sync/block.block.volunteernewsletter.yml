@@ -1,0 +1,25 @@
+uuid: 9f8e17cf-2de0-4e54-8bd7-7a3a4008bc74
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4f21a3ab-1a38-4479-87c8-d519f7695e0e'
+  module:
+    - block_content
+  theme:
+    - pinballoutreach
+id: volunteernewsletter
+theme: pinballoutreach
+region: content_sidebar
+weight: -10
+provider: null
+plugin: 'block_content:4f21a3ab-1a38-4479-87c8-d519f7695e0e'
+settings:
+  id: 'block_content:4f21a3ab-1a38-4479-87c8-d519f7695e0e'
+  label: 'Volunteer Newsletter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

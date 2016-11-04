@@ -1,6 +1,6 @@
 uuid: 64f9f38e-7ad7-4d9a-b601-1bfbf72e754c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - filter.format.basic_html
@@ -49,5 +49,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

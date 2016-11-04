@@ -1,6 +1,6 @@
 uuid: 392dceae-3390-47f6-9100-fc6d49ba035b
 langcode: en
-status: true
+status: false
 dependencies: {  }
 name: 'Restricted HTML'
 format: restricted_html

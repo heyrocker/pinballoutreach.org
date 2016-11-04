@@ -1,0 +1,21 @@
+uuid: d76a006e-0528-4f23-8602-4f17d27f8d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_date
+    - node.type.press
+  module:
+    - datetime
+id: node.press.field_press_date
+field_name: field_press_date
+entity_type: node
+bundle: press
+label: Date
+description: 'The date this press clipping apppeared.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

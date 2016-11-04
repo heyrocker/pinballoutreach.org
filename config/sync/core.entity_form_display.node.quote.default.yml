@@ -1,0 +1,64 @@
+uuid: 65fe1d7e-48a4-4856-9930-487605b284d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quote.body
+    - field.field.node.quote.field_quote_organization
+    - field.field.node.quote.field_quote_person_quoted
+    - field.field.node.quote.field_quote_title
+    - node.type.quote
+  module:
+    - path
+    - text
+id: node.quote.default
+targetEntityType: node
+bundle: quote
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote_organization:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_quote_person_quoted:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_quote_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  path:
+    type: path
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

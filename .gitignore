@@ -9,12 +9,12 @@
 
 # Ignore core and vendor when managing dependencies with Composer.
 # core
-# vendor
+vendor
 
 # Ignore configuration files that may contain sensitive information.
 docroot/sites/*/settings.local.php
 docroot/sites/*/services*.yml
-docroot/.htaccess
+docroot/sites/development.services.yml
 
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
@@ -22,6 +22,10 @@ docroot/sites/*/private
 
 # Ignore SimpleTest multi-site environment.
 docroot/sites/simpletest
+
+# Ignore editor config files
+docroot/.idea
+config/.idea
 
 # If you prefer to store your .gitignore file in the sites/ folder, comment
 # or delete the previous settings and uncomment the following ones, instead.
