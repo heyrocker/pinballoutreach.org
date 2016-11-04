@@ -1,6 +1,6 @@
 uuid: e953c54f-02b1-49d3-8d12-181d1e1e9132
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.upcoming_events
@@ -11,8 +11,8 @@ dependencies:
     - pinballoutreach
 id: pinballoutreach_views_block__upcoming_events_block_2
 theme: pinballoutreach
-region: featured_third
-weight: -5
+region: '-1'
+weight: -3
 provider: null
 plugin: 'views_block:upcoming_events-block_2'
 settings:

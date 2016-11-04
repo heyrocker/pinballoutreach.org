@@ -12,7 +12,7 @@ dependencies:
 id: pinballoutreach_views_block__most_recent_news_block_block_1
 theme: pinballoutreach
 region: featured_second
-weight: -5
+weight: -13
 provider: null
 plugin: 'views_block:most_recent_news_block-block_1'
 settings:

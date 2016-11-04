@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: pinballoutreach
 region: '-1'
-weight: -12
+weight: -8
 provider: null
 plugin: page_title_block
 settings:

@@ -9,7 +9,7 @@ dependencies:
 id: pinballoutreach_search
 theme: pinballoutreach
 region: '-1'
-weight: -6
+weight: -5
 provider: null
 plugin: search_form_block
 settings:

@@ -11,8 +11,8 @@ dependencies:
     - pinballoutreach
 id: pophqhours
 theme: pinballoutreach
-region: secondary_first
-weight: -7
+region: featured_first
+weight: -13
 provider: null
 plugin: 'block_content:b030a843-4c08-4037-8a49-73deabaf88bd'
 settings:
