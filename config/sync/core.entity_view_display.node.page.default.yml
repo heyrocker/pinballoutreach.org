@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_hero_image
+    - field.field.node.page.field_meta_description
     - node.type.page
   module:
     - text
@@ -20,6 +21,12 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
+  field_meta_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
   links:
     weight: 101
     settings: {  }

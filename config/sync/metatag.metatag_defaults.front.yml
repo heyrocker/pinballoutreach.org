@@ -1,0 +1,25 @@
+uuid: cdd146bc-e58d-429c-8073-59c93992e246
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yBqw6UD3j0MM1yoDSVDif7nw4SNdoS2e385nw--3ysk
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  description: 'Our Mission: To improve the lives of children by sharing the history and excitement of the game of pinball.'
+  image_src: /themes/custom/pinballoutreach/images/Logo-Index1.png
+  shortlink: '[site:url]'
+  title: 'Pinball Outreach Project'
+  og_description: 'Our Mission: To improve the lives of children by sharing the history and excitement of the game of pinball.'
+  og_image_url: 'http://pinballoutreach.org/themes/custom/pinballoutreach/images/Logo-Index1.png'
+  og_site_name: 'Pinball Outreach Project'
+  og_title: 'Pinball Outreach Project'
+  og_url: '[site:url]'
+  twitter_cards_description: 'Our Mission: To improve the lives of children by sharing the history and excitement of the game of pinball.'
+  twitter_cards_image: 'http://pinballoutreach.org/themes/custom/pinballoutreach/images/Logo-Index1.png'
+  twitter_cards_image_alt: 'Pinball Outreach Project logo'
+  twitter_cards_page_url: 'http://pinballoutreach.org'
+  twitter_cards_site: '@pinballoutreach'
+  twitter_cards_type: photo

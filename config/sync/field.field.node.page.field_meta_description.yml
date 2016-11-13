@@ -1,0 +1,19 @@
+uuid: 52ee6f59-07cb-4d1a-8064-71f6cd9d77bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_description
+    - node.type.page
+id: node.page.field_meta_description
+field_name: field_meta_description
+entity_type: node
+bundle: page
+label: 'Meta Description'
+description: 'The meta description is a short description of this page, which is helpful for search engines and will be used when displaying search results.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

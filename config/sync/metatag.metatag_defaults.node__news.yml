@@ -1,0 +1,14 @@
+uuid: 7b2164c4-9452-4800-8ae1-8319bc219f38
+langcode: en
+status: true
+dependencies: {  }
+id: node__news
+label: 'Content: News'
+tags:
+  description: '[node:field_news_deck]'
+  image_src: '[node:field_images:0]'
+  og_description: '[node:field_news_deck]'
+  og_image: '[node:field_images:0]'
+  twitter_cards_description: '[node:field_news_deck]'
+  twitter_cards_image: '[node:field_images:0]'
+  twitter_cards_type: summary_large_image

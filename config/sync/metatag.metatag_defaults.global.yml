@@ -1,0 +1,11 @@
+uuid: e6127b29-840c-4eb1-801d-b4626feecf9d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5rOnjIF_aDyGBmfXNhJnkPXxQMlem0CmVmggV-TF3Fg
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  og_site_name: 'Pinball Outreach Project'

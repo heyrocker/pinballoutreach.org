@@ -1,0 +1,20 @@
+uuid: ba88da27-7e69-404a-827b-86bdbe5fe6c8
+langcode: en
+status: true
+dependencies: {  }
+id: node__page
+label: 'Content: Basic page'
+tags:
+  description: '[node:field_meta_description]'
+  title: '[node:title] | [site:name]'
+  og_description: '[node:field_meta_description]'
+  og_image: '[node:field_hero_image]'
+  og_title: '[node:title]'
+  og_type: Page
+  og_url: '[node:alias]'
+  twitter_cards_description: '[node:field_meta_description]'
+  twitter_cards_image: '[node:field_hero_image]'
+  twitter_cards_page_url: '[node:alias]'
+  twitter_cards_site: '@pinballoutreach'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_type: summary_large_image

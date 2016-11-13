@@ -1,0 +1,14 @@
+uuid: 0774312e-7e3a-455d-a97a-48828d1a1a23
+langcode: en
+status: true
+dependencies: {  }
+id: node__image_gallery
+label: 'Content: Image Gallery'
+tags:
+  description: '[node:field_description]'
+  image_src: '[node:field_images:0]'
+  og_image: '[node:field_images:0]'
+  og_type: 'Image Gallery'
+  twitter_cards_description: '[node:description]'
+  twitter_cards_image: '[node:field_images:0]'
+  twitter_cards_type: summary_large_image
