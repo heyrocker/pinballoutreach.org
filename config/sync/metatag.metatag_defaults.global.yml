@@ -8,4 +8,5 @@ id: global
 label: Global
 tags:
   title: '[current-page:title] | [site:name]'
+  og_type: website
   og_site_name: 'Pinball Outreach Project'

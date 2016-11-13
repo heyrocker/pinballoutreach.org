@@ -5,10 +5,13 @@ dependencies: {  }
 id: node__news
 label: 'Content: News'
 tags:
-  description: '[node:field_news_deck]'
   image_src: '[node:field_images:0]'
-  og_description: '[node:field_news_deck]'
+  description: '[node:field_news_deck]'
   og_image: '[node:field_images:0]'
-  twitter_cards_description: '[node:field_news_deck]'
+  og_image_height: '[node:field_images:0:height]'
+  og_image_width: '[node:field_images:0:width]'
+  og_type: article
+  og_description: '[node:field_news_deck]'
   twitter_cards_image: '[node:field_images:0]'
   twitter_cards_type: summary_large_image
+  twitter_cards_description: '[node:field_news_deck]'
