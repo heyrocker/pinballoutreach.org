@@ -487,3 +487,11 @@ img.align-left{
   margin-bottom: 30px;
 }
 
+form.paypal-recurring {
+  font-size: 90%;
+  background: #f0f3f2;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+}
