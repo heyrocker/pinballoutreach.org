@@ -323,6 +323,7 @@
   .view-photo-gallery-listing .views-col {
     width: 30%;
     float: left;
+    padding-right: 20px;
   }
 }
 
