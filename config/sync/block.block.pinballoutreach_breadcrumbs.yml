@@ -9,7 +9,7 @@ dependencies:
 id: pinballoutreach_breadcrumbs
 theme: pinballoutreach
 region: '-1'
-weight: -13
+weight: -14
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -1,23 +1,23 @@
-uuid: 74dea679-b279-46d2-bb05-5ab5d76842dd
+uuid: 5168db87-ed31-47f8-afe3-5b35cd610013
 langcode: en
-status: false
+status: true
 dependencies:
   content:
-    - 'block_content:basic:9d118b30-2e6e-418f-b300-c660335d1e1f'
+    - 'block_content:promo_block:e0e1f29f-bdbf-4f5a-877f-b6805f84bc69'
   module:
     - block_content
     - system
   theme:
     - pinballoutreach
-id: pophqcurrentlineup
+id: pophqgrandreopeningphotogallery
 theme: pinballoutreach
-region: '-1'
-weight: -9
+region: featured_second
+weight: -15
 provider: null
-plugin: 'block_content:9d118b30-2e6e-418f-b300-c660335d1e1f'
+plugin: 'block_content:e0e1f29f-bdbf-4f5a-877f-b6805f84bc69'
 settings:
-  id: 'block_content:9d118b30-2e6e-418f-b300-c660335d1e1f'
-  label: 'POP HQ Current Lineup'
+  id: 'block_content:e0e1f29f-bdbf-4f5a-877f-b6805f84bc69'
+  label: 'PINBALL SUMMER CAMP'
   provider: block_content
   label_display: visible
   status: true

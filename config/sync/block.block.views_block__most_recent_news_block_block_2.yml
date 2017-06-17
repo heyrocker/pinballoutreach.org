@@ -1,0 +1,30 @@
+uuid: 15f1bd1c-bb8f-4c8f-9167-c0a2a2233099
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.most_recent_news_block
+  module:
+    - system
+    - views
+  theme:
+    - pinballoutreach
+id: views_block__most_recent_news_block_block_2
+theme: pinballoutreach
+region: '-1'
+weight: 1
+provider: null
+plugin: 'views_block:most_recent_news_block-block_2'
+settings:
+  id: 'views_block:most_recent_news_block-block_2'
+  label: '<a href="http://pinballoutreach.org/gallery/pop-grand-re-opening-party">POP HQ Grand Re-Opening Party</a>'
+  provider: views
+  label_display: visible
+  views_label: '<a href="http://pinballoutreach.org/gallery/pop-grand-re-opening-party">POP HQ Grand Re-Opening Party</a>'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

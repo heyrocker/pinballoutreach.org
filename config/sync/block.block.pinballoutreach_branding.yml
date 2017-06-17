@@ -9,7 +9,7 @@ dependencies:
 id: pinballoutreach_branding
 theme: pinballoutreach
 region: header
-weight: -5
+weight: -14
 provider: null
 plugin: system_branding_block
 settings:
