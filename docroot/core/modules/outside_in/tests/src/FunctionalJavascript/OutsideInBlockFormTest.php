@@ -6,6 +6,7 @@ use Drupal\block\Entity\Block;
 use Drupal\block_content\Entity\BlockContent;
 use Drupal\block_content\Entity\BlockContentType;
 use Drupal\user\Entity\Role;
+use Drupal\user\RoleInterface;
 
 /**
  * Testing opening and saving block forms in the off-canvas dialog.
@@ -15,6 +16,8 @@ use Drupal\user\Entity\Role;
 class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
 
   const TOOLBAR_EDIT_LINK_SELECTOR = '#toolbar-bar div.contextual-toolbar-tab button';
+
+  const LABEL_INPUT_SELECTOR = 'input[data-drupal-selector="edit-settings-label"]';
 
   /**
    * {@inheritdoc}
@@ -27,12 +30,13 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
     'toolbar',
     'contextual',
     'outside_in',
-    'quickedit',
     'search',
     'block_content',
     // Add test module to override CSS pointer-events properties because they
     // cause test failures.
     'outside_in_test_css',
+    'menu_link_content',
+    'menu_ui',
   ];
 
   /**
@@ -48,7 +52,6 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
       'access contextual links',
       'access toolbar',
       'administer nodes',
-      'access in-place editing',
       'search content',
     ]);
     $this->drupalLogin($user);
@@ -60,7 +63,10 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
    *
    * @dataProvider providerTestBlocks
    */
-  public function testBlocks($block_plugin, $new_page_text, $element_selector, $label_selector, $button_text, $toolbar_item) {
+  public function testBlocks($block_plugin, $new_page_text, $element_selector, $label_selector, $button_text, $toolbar_item, $permissions) {
+    if ($permissions) {
+      $this->grantPermissions(Role::load(Role::AUTHENTICATED_ID), $permissions);
+    }
     $web_assert = $this->assertSession();
     $page = $this->getSession()->getPage();
     foreach ($this->getTestThemes() as $theme) {
@@ -83,7 +89,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
           $this->waitForNoElement("#toolbar-administration a.is-active");
         }
         $page->find('css', $toolbar_item)->click();
-        $web_assert->waitForElementVisible('css', "{$toolbar_item}.is-active");
+        $this->assertElementVisibleAfterWait('css', "{$toolbar_item}.is-active");
       }
       $this->enableEditMode();
       if (isset($toolbar_item)) {
@@ -92,9 +98,15 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
       $this->openBlockForm($block_selector);
       switch ($block_plugin) {
         case 'system_powered_by_block':
+          // Confirm "Display Title" is not checked.
+          $web_assert->checkboxNotChecked('settings[label_display]');
+          // Confirm Title is not visible.
+          $this->assertEquals($this->isLabelInputVisible(), FALSE, 'Label is not visible');
+          $page->checkField('settings[label_display]');
+          $this->assertEquals($this->isLabelInputVisible(), TRUE, 'Label is visible');
           // Fill out form, save the form.
           $page->fillField('settings[label]', $new_page_text);
-          $page->checkField('settings[label_display]');
+
           break;
 
         case 'system_branding_block':
@@ -151,6 +163,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
         'label_selector' => 'h2',
         'button_text' => 'Save Powered by Drupal',
         'toolbar_item' => '#toolbar-item-user',
+        NULL,
       ],
       'block-branding' => [
         'block_plugin' => 'system_branding_block',
@@ -159,6 +172,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
         'label_selector' => "a[rel='home']:last-child",
         'button_text' => 'Save Site branding',
         'toolbar_item' => '#toolbar-item-administration',
+        ['administer site configuration'],
       ],
       'block-search' => [
         'block_plugin' => 'search_form_block',
@@ -167,6 +181,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
         'label_selector' => 'h2',
         'button_text' => 'Save Search form',
         'toolbar_item' => NULL,
+        NULL,
       ],
     ];
     return $blocks;
@@ -195,8 +210,19 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
    */
   protected function assertOffCanvasBlockFormIsValid() {
     $web_assert = $this->assertSession();
+    // Confirm that Block title display label has been changed.
+    $web_assert->elementTextContains('css', '.form-item-settings-label-display label', 'Display block title');
+    // Confirm Block title label is shown if checkbox is checked.
+    if ($this->getSession()->getPage()->find('css', 'input[name="settings[label_display]"]')->isChecked()) {
+      $this->assertEquals($this->isLabelInputVisible(), TRUE, 'Label is visible');
+      $web_assert->elementTextContains('css', '.form-item-settings-label label', 'Block title');
+    }
+    else {
+      $this->assertEquals($this->isLabelInputVisible(), FALSE, 'Label is not visible');
+    }
+
     // Check that common block form elements exist.
-    $web_assert->elementExists('css', 'input[data-drupal-selector="edit-settings-label"]');
+    $web_assert->elementExists('css', static::LABEL_INPUT_SELECTOR);
     $web_assert->elementExists('css', 'input[data-drupal-selector="edit-settings-label-display"]');
     // Check that advanced block form elements do not exist.
     $web_assert->elementNotExists('css', 'input[data-drupal-selector="edit-visibility-request-path-pages"]');
@@ -220,6 +246,8 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
    * Tests QuickEdit links behavior.
    */
   public function testQuickEditLinks() {
+    $this->container->get('module_installer')->install(['quickedit']);
+    $this->grantPermissions(Role::load(RoleInterface::AUTHENTICATED_ID), ['access in-place editing']);
     $quick_edit_selector = '#quickedit-entity-toolbar';
     $node_selector = '[data-quickedit-entity-id="node/1"]';
     $body_selector = '[data-quickedit-field-id="node/1/body/en/full"]';
@@ -257,7 +285,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
         $this->drupalGet('node/' . $node->id());
         // Waiting for Toolbar module.
         // @todo Remove the hack after https://www.drupal.org/node/2542050.
-        $web_assert->waitForElementVisible('css', '.toolbar-fixed');
+        $this->assertElementVisibleAfterWait('css', '.toolbar-fixed');
         // Waiting for Toolbar animation.
         $web_assert->assertWaitOnAjaxRequest();
         // The 2nd page load we should already be in edit mode.
@@ -266,7 +294,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
         }
         // In Edit mode clicking field should open QuickEdit toolbar.
         $page->find('css', $body_selector)->click();
-        $web_assert->waitForElementVisible('css', $quick_edit_selector);
+        $this->assertElementVisibleAfterWait('css', $quick_edit_selector);
 
         $this->disableEditMode();
         // Exiting Edit mode should close QuickEdit toolbar.
@@ -277,7 +305,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
         $this->enableEditMode();
         $this->openBlockForm($block_selector);
         $page->find('css', $body_selector)->click();
-        $web_assert->waitForElementVisible('css', $quick_edit_selector);
+        $this->assertElementVisibleAfterWait('css', $quick_edit_selector);
         // Off-canvas dialog should be closed when opening QuickEdit toolbar.
         $this->waitForOffCanvasToClose();
 
@@ -291,7 +319,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
       $this->disableEditMode();
       // Open QuickEdit toolbar before going into Edit mode.
       $this->clickContextualLink($node_selector, "Quick edit");
-      $web_assert->waitForElementVisible('css', $quick_edit_selector);
+      $this->assertElementVisibleAfterWait('css', $quick_edit_selector);
       // Open off-canvas and enter Edit mode via contextual link.
       $this->clickContextualLink($block_selector, "Quick edit");
       $this->waitForOffCanvasToOpen();
@@ -300,7 +328,7 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
       // Open QuickEdit toolbar via contextual link while in Edit mode.
       $this->clickContextualLink($node_selector, "Quick edit", FALSE);
       $this->waitForOffCanvasToClose();
-      $web_assert->waitForElementVisible('css', $quick_edit_selector);
+      $this->assertElementVisibleAfterWait('css', $quick_edit_selector);
       $this->disableEditMode();
     }
   }
@@ -442,6 +470,8 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
    * "Quick edit settings" is outside_in.module link.
    */
   public function testCustomBlockLinks() {
+    $this->container->get('module_installer')->install(['quickedit']);
+    $this->grantPermissions(Role::load(RoleInterface::AUTHENTICATED_ID), ['access in-place editing']);
     $this->drupalGet('user');
     $page = $this->getSession()->getPage();
     $links = $page->findAll('css', "#block-custom .contextual-links li a");
@@ -467,6 +497,16 @@ class OutsideInBlockFormTest extends OutsideInJavascriptTestBase {
    */
   public function getBlockSelector(Block $block) {
     return '#block-' . $block->id();
+  }
+
+  /**
+   * Determines if the label input is visible.
+   *
+   * @return bool
+   *   TRUE if the label is visible, FALSE if it is not.
+   */
+  protected function isLabelInputVisible() {
+    return $this->getSession()->getPage()->find('css', static::LABEL_INPUT_SELECTOR)->isVisible();
   }
 
 }
